@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "LightgunStudio (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "LightgunStudio (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
