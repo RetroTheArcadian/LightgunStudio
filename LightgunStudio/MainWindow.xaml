@@ -11,5 +11,7 @@
 
     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
         <Button x:Name="myButton" Click="myButton_Click">Click Me</Button>
+        <ListBox x:Name="deviceList" ItemsSource="{x:Bind _Controllers}" DisplayMemberPath="DeviceName">
+        </ListBox>
     </StackPanel>
 </Window>

@@ -5,6 +5,8 @@ VisualStudioVersion = 17.12.35527.113 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightgunStudio", "LightgunStudio.csproj", "{D4A241C1-44A7-49D1-979B-AA9BB1B73773}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LighgunStudioCore", "..\LighgunStudioCore\LighgunStudioCore.csproj", "{D7E8580E-ACE9-4C67-85F4-3EA3DDA26B07}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM64 = Debug|ARM64
@@ -33,6 +35,18 @@ Global
 		{D4A241C1-44A7-49D1-979B-AA9BB1B73773}.Release|x86.ActiveCfg = Release|x86
 		{D4A241C1-44A7-49D1-979B-AA9BB1B73773}.Release|x86.Build.0 = Release|x86
 		{D4A241C1-44A7-49D1-979B-AA9BB1B73773}.Release|x86.Deploy.0 = Release|x86
+		{D7E8580E-ACE9-4C67-85F4-3EA3DDA26B07}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{D7E8580E-ACE9-4C67-85F4-3EA3DDA26B07}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{D7E8580E-ACE9-4C67-85F4-3EA3DDA26B07}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D7E8580E-ACE9-4C67-85F4-3EA3DDA26B07}.Debug|x64.Build.0 = Debug|Any CPU
+		{D7E8580E-ACE9-4C67-85F4-3EA3DDA26B07}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D7E8580E-ACE9-4C67-85F4-3EA3DDA26B07}.Debug|x86.Build.0 = Debug|Any CPU
+		{D7E8580E-ACE9-4C67-85F4-3EA3DDA26B07}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{D7E8580E-ACE9-4C67-85F4-3EA3DDA26B07}.Release|ARM64.Build.0 = Release|Any CPU
+		{D7E8580E-ACE9-4C67-85F4-3EA3DDA26B07}.Release|x64.ActiveCfg = Release|Any CPU
+		{D7E8580E-ACE9-4C67-85F4-3EA3DDA26B07}.Release|x64.Build.0 = Release|Any CPU
+		{D7E8580E-ACE9-4C67-85F4-3EA3DDA26B07}.Release|x86.ActiveCfg = Release|Any CPU
+		{D7E8580E-ACE9-4C67-85F4-3EA3DDA26B07}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
