@@ -1,17 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Window
-    x:Class="LightgunStudio.MainWindow"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:LightgunStudio"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Title="LightgunStudio">
+﻿<Window x:Class="LightgunStudio.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LightgunStudio"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        ResizeMode="CanResize"
+        Background="Transparent"
+        AllowsTransparency="True"
+        Title="MainWindow" Height="720" Width="1280">
+    <Grid>
+        <!--// Window Border //-->
+        <Border Background="#212529" CornerRadius="20" />
 
-    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-        <Button x:Name="myButton" Click="myButton_Click">Click Me</Button>
-        <ListBox x:Name="deviceList" ItemsSource="{x:Bind _Controllers}" DisplayMemberPath="DeviceName">
-        </ListBox>
-    </StackPanel>
+        <Grid>
+            <!--// Base Grid //-->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="320" />
+                <ColumnDefinition Width="960" />
+            </Grid.ColumnDefinitions>
+            <!--// Navigation Panel //-->
+            <Grid HorizontalAlignment="Left" Width="320">
+                <Border Background="#272B2F" CornerRadius="20,0,0,20" />
+                
+            </Grid>
+
+        </Grid>
+
+        <Button x:Name="CloseApp" Style="{StaticResource ExitApp}" Click="CloseApp_Click" />
+    </Grid>
 </Window>
