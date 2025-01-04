@@ -56,6 +56,7 @@ namespace LightgunStudio
         private async Task UpdateCheckAsync()
         {
             var currentVersion =  Application.ResourceAssembly.ManifestModule.Assembly.GetName().Version;
+            LblVersion.Content = $"v{currentVersion}";
             var releasesUrl = $"https://api.github.com/repos/{_repo}/releases";
             HttpClient httpClient = new HttpClient();
             httpClient.DefaultRequestHeaders.UserAgent.Add(new ProductInfoHeaderValue("LightgunStudio", "1"));

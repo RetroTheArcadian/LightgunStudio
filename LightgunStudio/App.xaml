@@ -11,7 +11,10 @@
                 
                 <ResourceDictionary Source="Styles/Button.xaml" />
                 <ResourceDictionary Source="Styles/Image.xaml" />
+                <ResourceDictionary Source="Styles/Label.xaml" />
+                <ResourceDictionary Source="Styles/Page.xaml" />
                 <ResourceDictionary Source="Styles/Text.xaml" />
+                <ResourceDictionary Source="Utilities/DataTemplate.xaml" />
                 
             </ResourceDictionary.MergedDictionaries>
 
