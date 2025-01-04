@@ -22,6 +22,7 @@ using System.Diagnostics;
 using System.IO.Compression;
 using Path = System.IO.Path;
 using File = System.IO.File;
+using AutoUpdaterDotNET;
 
 namespace LightgunStudio
 {
@@ -63,58 +64,25 @@ namespace LightgunStudio
             if (releasesResult == null) return;
             var releases = JsonConvert.DeserializeObject<List<Root>>(releasesResult);
             var latestReleaseVersion = releases?.OrderByDescending(x=>x.published_at).FirstOrDefault();
-            if(latestReleaseVersion != null && currentVersion != null && currentVersion != Version.Parse(latestReleaseVersion.tag_name.Replace("v",string.Empty)))
+            if(latestReleaseVersion != null && currentVersion != null && currentVersion < Version.Parse(latestReleaseVersion.tag_name.Replace("v",string.Empty)))
             {
-                var downloadPath = Directory.GetCurrentDirectory() + @"\" + latestReleaseVersion.assets[0].name;
-                using (var client = new HttpClientDownloadWithProgress(latestReleaseVersion.assets[0].browser_download_url, downloadPath))
+                var shouldUpdate = MessageBox.Show("New version found. Do you want to update?", "Update", MessageBoxButton.OKCancel);
+                if (shouldUpdate == MessageBoxResult.Cancel) return;
+
+                UpdateInfoEventArgs args = new UpdateInfoEventArgs()
                 {
-                    client.ProgressChanged += (totalFileSize, totalBytesDownloaded, progressPercentage) =>
-                    {
-                        Console.WriteLine($"{progressPercentage}% ({totalBytesDownloaded}/{totalFileSize})");
-                    };
-
-                    await client.StartDownload();
-                    try
-                    {
-                        string zipPath = Directory.GetCurrentDirectory() + @"\" + latestReleaseVersion.assets[0].name;
-                        Console.WriteLine("Zip's path: " + zipPath);
-                        //Declare a temporary path to unzip your files
-                        string tempPath = Path.Combine(Directory.GetCurrentDirectory(), "tempUnzip");
-                        Directory.CreateDirectory(tempPath);
-                        string extractPath = Directory.GetCurrentDirectory();
-                        ZipFile.ExtractToDirectory(zipPath, tempPath);
-
-                        //build an array of the unzipped files
-                        string[] files = Directory.GetFiles(tempPath);
-
-                        foreach (string file in files)
-                        {
-                            FileInfo f = new FileInfo(file);
-                            //Check if the file exists already, if so delete it and then move the new file to the extract folder
-                            if (File.Exists(Path.Combine(extractPath, f.Name)))
-                            {
-                                File.Delete(Path.Combine(extractPath, f.Name));
-                                File.Move(f.FullName, Path.Combine(extractPath, f.Name));
-                            }
-                            else
-                            {
-                                File.Move(f.FullName, Path.Combine(extractPath, f.Name));
-                            }
-                        }
-                        //Delete the temporary directory.
-                        Directory.Delete(tempPath,true);
-                        MessageBox.Show("Download Complete, Starting new App now", "UpdateCheck");
-                        Process.Start("LightgunStudio.exe", Directory.GetCurrentDirectory());
-                        Close();
-                    }
-                    catch (Exception exception)
-                    {
-                        var ex = exception;
-                        //return (1); // 1 = extract error
-                    }
-
+                    DownloadURL = latestReleaseVersion.assets[0].browser_download_url,
+                };
+                Directory.CreateDirectory(Directory.GetCurrentDirectory() + @"\Temp");
+                AutoUpdater.DownloadPath = Directory.GetCurrentDirectory() + @"\Temp";
+                AutoUpdater.InstallationPath = Directory.GetCurrentDirectory();
+                AutoUpdater.ExecutablePath = Directory.GetCurrentDirectory();
+                AutoUpdater.AppTitle = "Lightgun Studio Updater";
+                AutoUpdater.HttpUserAgent = "LightgunStudio";
+                if (AutoUpdater.DownloadUpdate(args))
+                {
+                    Close();
                 }
-                
             }
         }
     }
