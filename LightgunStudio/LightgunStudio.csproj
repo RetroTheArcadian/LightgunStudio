@@ -9,25 +9,60 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\Menu\dependency.png" />
+    <None Remove="Images\Menu\emulator.png" />
+    <None Remove="Images\Menu\gun.png" />
+    <None Remove="Images\Menu\home.png" />
     <None Remove="Images\shutdown_def.png" />
     <None Remove="Images\shutdown_mo.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Page Remove="Styles\Button.xaml" />
+    <Page Remove="Styles\Image.xaml" />
+    <Page Remove="Styles\Text.xaml" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Images\shutdown_def.png">
+    <Content Include="Fonts\Super-Squad.ttf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\shutdown_mo.png">
+    <Content Include="Images\Menu\dependency.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Images\Menu\emulator.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Menu\gun.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Menu\home.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\System\shutdown_def.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\System\shutdown_mo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LightgunStudio.Core\LightgunStudio.Core.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Styles\Button.xaml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Styles\Image.xaml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Styles\Text.xaml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

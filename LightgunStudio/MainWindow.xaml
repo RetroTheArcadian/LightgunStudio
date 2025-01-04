@@ -3,19 +3,24 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:LightgunStudio"
+        xmlns:local="clr-namespace:LightgunStudio" xmlns:Menu="clr-namespace:LightgunStudio.Utilities"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
         WindowStyle="None"
-        ResizeMode="CanResize"
+        ResizeMode="CanResizeWithGrip"
         Background="Transparent"
         AllowsTransparency="True"
-        Title="MainWindow" Height="720" Width="1280">
+        Loaded="Window_Loaded"
+        Title="Lightgun Studio" Height="720" Width="1280" MouseDown="Window_MouseDown">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="911*"/>
+            <ColumnDefinition Width="369*"/>
+        </Grid.ColumnDefinitions>
         <!--// Window Border //-->
-        <Border Background="#212529" CornerRadius="20" />
+        <Border Background="#1F2022" CornerRadius="20" Grid.ColumnSpan="2" />
 
-        <Grid>
+        <Grid Grid.ColumnSpan="2">
             <!--// Base Grid //-->
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="320" />
@@ -23,12 +28,47 @@
             </Grid.ColumnDefinitions>
             <!--// Navigation Panel //-->
             <Grid HorizontalAlignment="Left" Width="320">
-                <Border Background="#272B2F" CornerRadius="20,0,0,20" />
-                
+                <Border Background="#202124" CornerRadius="20,0,0,20" />
+                <TextBlock Text="Lightgun Studio" Style="{StaticResource Text_Style_Header}" VerticalAlignment="Top" Width="277" Margin="0,34,0,0" />
+                <StackPanel Height="500" Width="320">
+                    <Menu:Btn Style="{StaticResource BtnStyle}"
+                              IsChecked="True">
+                        <Grid>
+                            <Image Source="Images/Menu/home.png" Style="{StaticResource Image_Style}" />
+                            <TextBlock Text="Home"
+                                       Style="{StaticResource Text_Style}" />
+                        </Grid>
+                    </Menu:Btn>
+                    <Menu:Btn Style="{StaticResource BtnStyle}"
+                              IsChecked="False">
+                        <Grid>
+                            <Image Source="Images/Menu/gun.png" Style="{StaticResource Image_Style}" />
+                            <TextBlock Text="Gun Combinations"
+                                       Style="{StaticResource Text_Style}" />
+                        </Grid>
+                    </Menu:Btn>
+                    <Menu:Btn Style="{StaticResource BtnStyle}"
+                              IsChecked="False">
+                        <Grid>
+                            <Image Source="Images/Menu/emulator.png" Style="{StaticResource Image_Style}" />
+                            <TextBlock Text="Emulators"
+                                       Style="{StaticResource Text_Style}" />
+                        </Grid>
+                    </Menu:Btn>
+                    <Menu:Btn Style="{StaticResource BtnStyle}"
+                              IsChecked="False">
+                        <Grid>
+                            <Image Source="Images/Menu/dependency.png" Style="{StaticResource Image_Style}" />
+                            <TextBlock Text="Dependencies"
+                                       Style="{StaticResource Text_Style}" />
+                        </Grid>
+                    </Menu:Btn>
+                </StackPanel>
+
             </Grid>
 
         </Grid>
 
-        <Button x:Name="CloseApp" Style="{StaticResource ExitApp}" Click="CloseApp_Click" />
+        <Button x:Name="CloseApp" Style="{StaticResource ExitApp}" Click="CloseApp_Click" Grid.Column="1" />
     </Grid>
 </Window>
