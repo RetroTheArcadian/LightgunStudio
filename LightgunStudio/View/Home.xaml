@@ -8,6 +8,7 @@
         d:DesignHeight="720" d:DesignWidth="960"
         Style="{StaticResource Page_Style}">
     <Grid>
-        <TextBlock Text="Home" Width="100" Height="30" Style="{StaticResource Text_Style}"/>
+        <TextBlock Text="Home" Width="960" Height="30" Style="{StaticResource Text_Style_PageHeader}" Margin="30,30,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnEsDl" Content="Download" Click="btnEsDl_Click" Width="200" Height="30" Style="{StaticResource btn}" Margin="706,632,54,58" />
     </Grid>
 </UserControl>

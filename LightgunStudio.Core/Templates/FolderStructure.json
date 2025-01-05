@@ -1,0 +1,35 @@
+﻿[
+  {
+    "Name": "Media",
+    "Children": [
+      { "Name": "3dboxes" },
+      { "Name": "backcovers" },
+      { "Name": "covers" },
+      { "Name": "fanart" },
+      { "Name": "manuals" },
+      { "Name": "marquees" },
+      { "Name": "miximages" },
+      { "Name": "screenshots" },
+      { "Name": "titlescreens" },
+      { "Name": "videos" }
+    ]
+  },
+  {
+    "Name": "Games",
+    "Children": [
+      { "Name": "American Laser  Games" },
+      { "Name": "Atomiswave" },
+      { "Name": "TeknoParrot" }
+    ]
+  },
+  {
+    "Name": "Emulators",
+    "Children": [
+
+    ]
+  },
+  {
+    "Name": "Temp",
+    "Children": []
+  }
+]

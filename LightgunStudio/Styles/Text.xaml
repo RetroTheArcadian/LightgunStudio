@@ -34,4 +34,38 @@
                 Value="0,0,0,0" />
 
     </Style>
+    <Style x:Key="Text_Style_PageHeader"
+           TargetType="TextBlock">
+
+        <Setter Property="FontFamily"
+                Value="/Fonts/#Stormlight" />
+        <Setter Property="VerticalAlignment"
+                Value="Center" />
+        <Setter Property="HorizontalAlignment"
+                Value="Left" />
+        <Setter Property="Foreground"
+                Value="#DBDBDB" />
+        <Setter Property="FontSize"
+                Value="24" />
+        <Setter Property="Margin"
+                Value="0,0,0,0" />
+
+    </Style>
+    <Style x:Key="Text_Style_Version"
+           TargetType="TextBlock">
+
+        <Setter Property="FontFamily"
+                Value="/Fonts/#Roboto Light" />
+        <Setter Property="VerticalAlignment"
+                Value="Center" />
+        <Setter Property="HorizontalAlignment"
+                Value="Right" />
+        <Setter Property="Foreground"
+                Value="#DBDBDB" />
+        <Setter Property="FontSize"
+                Value="14" />
+        <Setter Property="Margin"
+                Value="0,0,0,0" />
+
+    </Style>
 </ResourceDictionary>

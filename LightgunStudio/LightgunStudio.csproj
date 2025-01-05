@@ -12,7 +12,7 @@
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/RetroTheArcadian/LightgunStudio</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-	<VersionSuffix>1.0.1.$([System.DateTime]::UtcNow.ToString(mmff))</VersionSuffix>
+	<VersionSuffix>$([System.DateTime]::UtcNow.ToString(yyyy)).$([System.DateTime]::UtcNow.ToString(MMdd)).$([System.DateTime]::UtcNow.ToString(HH)).$([System.DateTime]::UtcNow.ToString(mmff))</VersionSuffix>
 	<AssemblyVersion Condition=" '$(VersionSuffix)' == '' ">0.0.0.1</AssemblyVersion>
 	<AssemblyVersion Condition=" '$(VersionSuffix)' != '' ">$(VersionSuffix)</AssemblyVersion>
 	<Version Condition=" '$(VersionSuffix)' == '' ">0.0.1.0</Version>
@@ -24,18 +24,24 @@
     <None Remove="Fonts\Roboto-Black.ttf" />
     <None Remove="Fonts\Roboto-Light.ttf" />
     <None Remove="Fonts\Stormlight.ttf" />
+    <None Remove="Images\Emulators\Dolphin.png" />
+    <None Remove="Images\Emulators\Flycast.png" />
+    <None Remove="Images\Emulators\MAME.png" />
+    <None Remove="Images\Emulators\TeknoParrot.png" />
     <None Remove="Images\Menu\dependency.png" />
     <None Remove="Images\Menu\emulator.png" />
     <None Remove="Images\Menu\gun.png" />
     <None Remove="Images\Menu\home.png" />
     <None Remove="Images\shutdown_def.png" />
     <None Remove="Images\shutdown_mo.png" />
+    <None Remove="Images\System\defaultcover.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Page Remove="Styles\Button.xaml" />
     <Page Remove="Styles\Image.xaml" />
     <Page Remove="Styles\Page.xaml" />
+    <Page Remove="Styles\ScrollViewer.xaml" />
     <Page Remove="Styles\Text.xaml" />
   </ItemGroup>
 
@@ -44,6 +50,18 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Fonts\Stormlight.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Emulators\Dolphin.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Emulators\Flycast.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Emulators\MAME.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Emulators\TeknoParrot.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\Menu\dependency.png">
@@ -56,6 +74,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\Menu\home.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\System\defaultcover.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\System\shutdown_def.png">
@@ -98,9 +119,16 @@
     <Resource Include="Styles\Page.xaml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Styles\ScrollViewer.xaml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Styles\Text.xaml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Installers\Emulators\" />
   </ItemGroup>
 
 </Project>

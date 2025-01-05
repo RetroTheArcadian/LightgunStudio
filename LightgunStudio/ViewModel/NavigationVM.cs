@@ -14,14 +14,17 @@ namespace LightgunStudio.ViewModel
 
         public ICommand HomeCommand { get; set; }
         public ICommand GunsCommand { get; set; }
+        public ICommand EmulatorsCommand { get; set; }
 
         private void Home(object obj) => CurrentView = new HomeVM();
         private void Guns(object obj) => CurrentView = new GunsVM();
+        private void Emulators(object obj) => CurrentView = new EmulatorsVM();
 
         public NavigationVM()
         {
             HomeCommand = new RelayCommand(Home);
             GunsCommand = new RelayCommand(Guns);
+            EmulatorsCommand = new RelayCommand(Emulators);
 
             // Startup Page
             CurrentView = new HomeVM();

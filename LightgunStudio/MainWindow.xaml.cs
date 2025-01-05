@@ -1,28 +1,11 @@
-﻿using LightgunStudio.Core.Dtos;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System.IO;
-using System;
-using System.Net;
 using System.Net.Http;
-using System.Text;
-using System.Threading;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using static System.Net.WebRequestMethods;
-using LightgunStudio.Core.Utilities;
 using System.Net.Http.Headers;
-using System.Diagnostics;
-using System.IO.Compression;
-using Path = System.IO.Path;
-using File = System.IO.File;
 using AutoUpdaterDotNET;
+using LightgunStudio.Core.Dtos.Github;
 
 namespace LightgunStudio
 {
@@ -56,9 +39,9 @@ namespace LightgunStudio
         private async Task UpdateCheckAsync()
         {
             var currentVersion =  Application.ResourceAssembly.ManifestModule.Assembly.GetName().Version;
-            LblVersion.Content = $"v{currentVersion}";
+            LblVersion.Text = $"v{currentVersion}";
             var releasesUrl = $"https://api.github.com/repos/{_repo}/releases";
-            HttpClient httpClient = new HttpClient();
+            var httpClient = new HttpClient();
             httpClient.DefaultRequestHeaders.UserAgent.Add(new ProductInfoHeaderValue("LightgunStudio", "1"));
             var releasesGet = await httpClient.GetAsync(releasesUrl);
             var releasesResult = await releasesGet.Content.ReadAsStringAsync();
@@ -70,7 +53,7 @@ namespace LightgunStudio
                 var shouldUpdate = MessageBox.Show("New version found. Do you want to update?", "Update", MessageBoxButton.OKCancel);
                 if (shouldUpdate == MessageBoxResult.Cancel) return;
 
-                UpdateInfoEventArgs args = new UpdateInfoEventArgs()
+                var args = new UpdateInfoEventArgs()
                 {
                     DownloadURL = latestReleaseVersion.assets[0].browser_download_url,
                 };

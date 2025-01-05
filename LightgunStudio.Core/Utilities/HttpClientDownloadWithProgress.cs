@@ -1,6 +1,4 @@
 ﻿using System.Net.Http.Headers;
-using System.Net.Http;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace LightgunStudio.Core.Utilities
 {
@@ -9,7 +7,7 @@ namespace LightgunStudio.Core.Utilities
         private readonly string _downloadUrl = downloadUrl;
         private readonly string _destinationFilePath = destinationFilePath;
 
-        private HttpClient _httpClient;
+        private HttpClient? _httpClient;
 
         public delegate void ProgressChangedHandler(long? totalFileSize, long totalBytesDownloaded, double? progressPercentage);
 
@@ -53,7 +51,7 @@ namespace LightgunStudio.Core.Utilities
                         continue;
                     }
 
-                    await fileStream.WriteAsync(buffer, 0, bytesRead);
+                    await fileStream.WriteAsync(buffer.AsMemory(0, bytesRead));
 
                     totalBytesRead += bytesRead;
                     readCount += 1;
@@ -77,9 +75,6 @@ namespace LightgunStudio.Core.Utilities
             ProgressChanged(totalDownloadSize, totalBytesRead, progressPercentage);
         }
 
-        public void Dispose()
-        {
-            _httpClient?.Dispose();
-        }
+        public void Dispose() => _httpClient?.Dispose();
     }
 }

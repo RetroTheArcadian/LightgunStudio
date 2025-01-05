@@ -7,4 +7,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\LightgunStudio.Core\LightgunStudio.Core.csproj" />
+  </ItemGroup>
+
 </Project>

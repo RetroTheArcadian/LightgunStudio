@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="LightgunStudio.View.Emulators"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="clr-namespace:LightgunStudio.ViewModel" xmlns:Menu="clr-namespace:LightgunStudio.Utilities" d:DataContext="{d:DesignInstance Type=vm:EmulatorsVM}"
+             mc:Ignorable="d" 
+        d:DesignHeight="720" d:DesignWidth="960"
+        Style="{StaticResource Page_Style}">
+    <Grid>
+        <TextBlock Text="Emulators" Width="960" Height="30" Style="{StaticResource Text_Style_PageHeader}" Margin="30,30,0,0" VerticalAlignment="Top"/>
+        <ScrollViewer Width="900" Height="510" Style="{StaticResource  ScrollViewer_Style}">
+            <ItemsControl ItemsSource="{Binding EmulatorList}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Menu:Btn Style="{StaticResource BtnStyle_Tile}" IsChecked="{Binding Selected}">
+                            <Grid>
+                                <Image Source="{Binding ImagePath}" Style="{StaticResource Image_Style_Tile}" />
+                            </Grid>
+                        </Menu:Btn>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <UniformGrid Rows="{Binding GridSize}" Columns="3">
+                        </UniformGrid>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+            </ItemsControl>
+        </ScrollViewer>
+        
+    </Grid>
+</UserControl>

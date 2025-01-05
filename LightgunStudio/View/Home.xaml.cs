@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LightgunStudio.Core.Utilities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,13 @@ namespace LightgunStudio.View
         public Home()
         {
             InitializeComponent();
+        }
+
+        private async void btnEsDl_Click(object sender, RoutedEventArgs e)
+        {
+            FolderStructure.CreateFolderStructure();
+            //var t = new Installers.Frontends.EmulationStationDesktopEdition();
+            //await t.DownloadAsync();
         }
     }
 }

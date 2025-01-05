@@ -7,10 +7,13 @@ Setup and manage your lightgun and games.
 - Setup multiple combinations of your lightguns
 - Install dependencies in one click
 - Configures [EmulationStation Desktop Edition](https://www.es-de.org/)
-- Creates structure for your games
+- Configures [LaunchBox/BigBox](https://www.launchbox-app.com/)
+- Creates structure for your collection
+- Install Emulators, Tools etc.
 - Creates AutoHotKey scripts for launching games
 - Generates xml settings for demulshooter, TeknoParrot etc.
 - Allows easy switching between your defined lightgun combinations
+- Auto updates
 
 ## Table of contents
 
@@ -26,9 +29,14 @@ Setup and manage your lightgun and games.
 
 ## Quick start
 
-Download the latest version from our releases.
+There are a few steps in order to get LightgunStudio running.
+Please read and follow these steps carefully!
 
-- Run installer
+- Download the latest version from our releases.
+- Create a folder in the root of any drive fx. "Arcade" or "Lightgun"
+- Add this folder to your antivirus exceptions. (Lots of programs like TeknoParrot games will throw false positives and get quarantined or deleted)
+- Unpack the LightgunStudio.zip to the folder you created. (It should be a folder called "LightgunStudio" in your folder fx. "D:\Arcade\LightgunStudio")
+- Run "LightgunStudio.exe" (If you are running Windows Smart Screen it may ask you to allow)
 - Follow our step by step guide to setup
 - Shoot stuff!
 

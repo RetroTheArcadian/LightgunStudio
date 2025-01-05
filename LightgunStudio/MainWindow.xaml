@@ -18,12 +18,12 @@
         <vm:NavigationVM />
     </Window.DataContext>
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="911*"/>
-            <ColumnDefinition Width="369*"/>
-        </Grid.ColumnDefinitions>
         <!--// Window Border //-->
-        <Border Background="#1F2022" CornerRadius="20" Grid.ColumnSpan="2" />
+        <Border CornerRadius="20" Grid.ColumnSpan="2">
+            <Border.Background>
+                <ImageBrush ImageSource="Images/System/defaultcover.png"></ImageBrush>
+            </Border.Background>
+        </Border>
 
         <Grid Grid.ColumnSpan="2">
             <!--// Base Grid //-->
@@ -33,12 +33,17 @@
             </Grid.ColumnDefinitions>
             <!--// Navigation Panel //-->
             <Grid HorizontalAlignment="Left" Width="320">
-                <Border Background="#202124" CornerRadius="20,0,0,20" />
+                <Border CornerRadius="20,0,0,20">
+                    <Border.Background>
+                        <SolidColorBrush Color="#202124" Opacity=".7" />
+                    </Border.Background>
+                </Border>
                 <TextBlock TextWrapping="WrapWithOverflow" 
                            Text="Lightgun Studio" Style="{StaticResource Text_Style_Header}" 
                            TextAlignment="Center"
                            VerticalAlignment="Top" 
-                           Width="276" Margin="0,10,0,0" />
+                           Width="320" Margin="0,10,0,0" />
+                <TextBlock x:Name="LblVersion" Text="Version" TextAlignment="Center" Style="{StaticResource Text_Style_Version}" Height="30" Width="320" HorizontalAlignment="Center" Margin="0,92,0,0" VerticalAlignment="Top" />
                 <StackPanel Height="500" Width="320">
                     <Menu:Btn Style="{StaticResource BtnStyle}"
                               Command="{Binding HomeCommand}"
@@ -59,6 +64,7 @@
                         </Grid>
                     </Menu:Btn>
                     <Menu:Btn Style="{StaticResource BtnStyle}"
+                              Command="{Binding EmulatorsCommand}"
                               IsChecked="False">
                         <Grid>
                             <Image Source="Images/Menu/emulator.png" Style="{StaticResource Image_Style}" />
@@ -78,14 +84,11 @@
 
             </Grid>
             <Grid Grid.Column="1">
-
-                <ContentControl x:Name="Pages"
-                                Content="{Binding CurrentView}" />
-
+                <ContentControl x:Name="Pages" Content="{Binding CurrentView}" />
             </Grid>
         </Grid>
 
         <Button x:Name="CloseApp" Style="{StaticResource ExitApp}" Click="CloseApp_Click" Grid.Column="1" />
-        <Label x:Name="LblVersion" Content="Version" Style="{StaticResource Label_Version}" Height="30" Width="80" Grid.Column="1" Margin="229,20,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.592,0.679" HorizontalAlignment="Left" />
     </Grid>
+
 </Window>
