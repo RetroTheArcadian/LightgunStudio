@@ -45,69 +45,69 @@
                            Width="320" Margin="0,10,0,0" />
                 <TextBlock x:Name="LblVersion" Text="Version" TextAlignment="Center" Style="{StaticResource Text_Style_Version}" Height="30" Width="320" HorizontalAlignment="Center" Margin="0,92,0,0" VerticalAlignment="Top" />
                 <StackPanel Height="500" Width="320">
-                    <Menu:Btn Style="{StaticResource BtnStyle}"
+                    <Menu:RadioBtn Style="{StaticResource BtnStyle}"
                               Command="{Binding HomeCommand}"
                               IsChecked="True">
                         <Grid>
                             <Image Source="Images/Menu/home.png" Style="{StaticResource Image_Style}" />
                             <TextBlock Text="Home"
-                                       Style="{StaticResource Text_Style}" />
+                                       Style="{StaticResource Text_Style_Menu_Btn}" />
                         </Grid>
-                    </Menu:Btn>
-                    <Menu:Btn Style="{StaticResource BtnStyle}"
+                    </Menu:RadioBtn>
+                    <Menu:RadioBtn Style="{StaticResource BtnStyle}"
                               Command="{Binding FrontendsCommand}"
                               IsChecked="False">
                         <Grid>
                             <Image Source="Images/Menu/frontend.png" Style="{StaticResource Image_Style}" />
                             <TextBlock Text="Frontends"
-                                       Style="{StaticResource Text_Style}" />
+                                       Style="{StaticResource Text_Style_Menu_Btn}" />
                         </Grid>
-                    </Menu:Btn>
-                    <Menu:Btn Style="{StaticResource BtnStyle}"
+                    </Menu:RadioBtn>
+                    <Menu:RadioBtn Style="{StaticResource BtnStyle}"
                               Command="{Binding EmulatorsCommand}"
                               IsChecked="False">
                         <Grid>
                             <Image Source="Images/Menu/emulator.png" Style="{StaticResource Image_Style}" />
                             <TextBlock Text="Emulators"
-                                       Style="{StaticResource Text_Style}" />
+                                       Style="{StaticResource Text_Style_Menu_Btn}" />
                         </Grid>
-                    </Menu:Btn>
-                    <Menu:Btn Style="{StaticResource BtnStyle}"
+                    </Menu:RadioBtn>
+                    <Menu:RadioBtn Style="{StaticResource BtnStyle}"
                               Command="{Binding SoftwareCommand}"
                               IsChecked="False">
                         <Grid>
                             <Image Source="Images/Menu/software.png" Style="{StaticResource Image_Style}" />
                             <TextBlock Text="Software/Tools"
-                                       Style="{StaticResource Text_Style}" />
+                                       Style="{StaticResource Text_Style_Menu_Btn}" />
                         </Grid>
-                    </Menu:Btn>
-                    <Menu:Btn Style="{StaticResource BtnStyle}"
+                    </Menu:RadioBtn>
+                    <Menu:RadioBtn Style="{StaticResource BtnStyle}"
                               Command="{Binding DependenciesCommand}"
                               IsChecked="False">
                         <Grid>
                             <Image Source="Images/Menu/dependency.png" Style="{StaticResource Image_Style}" />
                             <TextBlock Text="Dependencies"
-                                       Style="{StaticResource Text_Style}" />
+                                       Style="{StaticResource Text_Style_Menu_Btn}" />
                         </Grid>
-                    </Menu:Btn>
-                    <Menu:Btn Style="{StaticResource BtnStyle}"
+                    </Menu:RadioBtn>
+                    <Menu:RadioBtn Style="{StaticResource BtnStyle}"
                               Command="{Binding GunsCommand}"
                               IsChecked="False">
                         <Grid>
                             <Image Source="Images/Menu/gun.png" Style="{StaticResource Image_Style}" />
                             <TextBlock Text="Gun Combinations"
-                                       Style="{StaticResource Text_Style}" />
+                                       Style="{StaticResource Text_Style_Menu_Btn}" />
                         </Grid>
-                    </Menu:Btn>
-                    <Menu:Btn Style="{StaticResource BtnStyle}"
+                    </Menu:RadioBtn>
+                    <Menu:RadioBtn Style="{StaticResource BtnStyle}"
                               Command="{Binding SettingsCommand}"
                               IsChecked="False">
                         <Grid>
                             <Image Source="Images/Menu/settings.png" Style="{StaticResource Image_Style}" />
                             <TextBlock Text="Settings"
-                                       Style="{StaticResource Text_Style}" />
+                                       Style="{StaticResource Text_Style_Menu_Btn}" />
                         </Grid>
-                    </Menu:Btn>
+                    </Menu:RadioBtn>
                 </StackPanel>
 
             </Grid>

@@ -105,7 +105,7 @@
     </Style>
 
     <Style x:Key="BtnStyle_Tile"
-       TargetType="RadioButton">
+       TargetType="CheckBox">
 
         <Setter Property="HorizontalAlignment"
             Value="Center" />
@@ -116,10 +116,10 @@
 
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="RadioButton">
+                <ControlTemplate TargetType="CheckBox">
 
                     <Border x:Name="border"
-                        Height="250"
+                        Height="400"
                         Width="250"
                         BorderThickness="0">
 
@@ -131,7 +131,7 @@
                         <Grid>
 
                             <Border x:Name="Indicator"
-                                Height="250"
+                                Height="400"
                                 Width="4"
                                 HorizontalAlignment="Left"
                                 VerticalAlignment="Center"
@@ -149,10 +149,6 @@
 
                         <Trigger Property="IsMouseOver"
                              Value="True">
-
-                            <Setter Property="Visibility"
-                                TargetName="Indicator"
-                                Value="Visible" />
 
                         </Trigger>
 

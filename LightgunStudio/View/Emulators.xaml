@@ -15,11 +15,18 @@
             <ItemsControl ItemsSource="{Binding DisplayEmulators}">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <Menu:Btn Style="{StaticResource BtnStyle_Tile}" IsChecked="{Binding Selected}">
+                        <Menu:CheckBtn Style="{StaticResource BtnStyle_Tile}" IsChecked="{Binding Selected, Mode=TwoWay}">
                             <Grid>
-                                <Image Source="{Binding ImagePath}" Style="{StaticResource Image_Style_Tile}" />
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="220"></RowDefinition>
+                                    <RowDefinition Height="30"></RowDefinition>
+                                    <RowDefinition Height="150"></RowDefinition>
+                                </Grid.RowDefinitions>
+                                <Image Grid.Row="0" Source="{Binding ImagePath}" Style="{StaticResource Image_Style_Tile}" />
+                                <TextBlock Grid.Row="1" Text="{Binding DisplayName}" Style="{StaticResource Text_Style_Tile_Header}" />
+                                <TextBlock Grid.Row="2" Text="{Binding Selected}" Style="{StaticResource Text_Style_Tile_Text}" />
                             </Grid>
-                        </Menu:Btn>
+                        </Menu:CheckBtn>
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
                 <ItemsControl.ItemsPanel>
