@@ -2,7 +2,7 @@
 <GameProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <GameName>Infinity Blade FX</GameName>
   <GameGenre>Fighting</GameGenre>
-  <GamePath>\Launchbox\Games\Teknoparrot\Infinity Blade FX\Binaries\Win32\SwordGame.exe</GamePath>
+  <GamePath>###TP_GAME_ROOT_DIR###\Infinity Blade FX\Binaries\Win32\SwordGame.exe</GamePath>
   <TestMenuParameter />
   <TestMenuIsExecutable>false</TestMenuIsExecutable>
   <ExtraParameters />

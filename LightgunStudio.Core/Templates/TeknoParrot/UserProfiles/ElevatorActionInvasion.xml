@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <GameName>Elevator Action Invasion</GameName>
-  <GameGenre>Shooter</GameGenre>
-  <GamePath>\Launchbox\Games\Teknoparrot\Elevator Action Invasion\ESGame\Binaries\Win64\ESGame-Win64-Shipping.exe</GamePath>
+  <ProfileName>ElevatorActionInvasion</ProfileName>
+  <GameNameInternal>Elevator Action Invasion</GameNameInternal>
+  <GameGenreInternal>Shooter</GameGenreInternal>
+  <GamePath>###TP_GAME_ROOT_DIR###\Elevator Action Invasion\ESGame\Binaries\Win64\ESGame-Win64-Shipping.exe</GamePath>
   <TestMenuParameter />
   <TestMenuIsExecutable>false</TestMenuIsExecutable>
   <ExtraParameters />
@@ -88,7 +89,7 @@
     </FieldInformation>
     <FieldInformation>
       <CategoryName>General</CategoryName>
-      <FieldName>ResolutionWidth</FieldName>
+      <FieldName>DesiredWidth</FieldName>
       <FieldValue>1920</FieldValue>
       <FieldType>Text</FieldType>
       <FieldMin>0</FieldMin>
@@ -97,8 +98,8 @@
     </FieldInformation>
     <FieldInformation>
       <CategoryName>General</CategoryName>
-      <FieldName>ResolutionHeight</FieldName>
-      <FieldValue>1080</FieldValue>
+      <FieldName>DesiredHeight</FieldName>
+      <FieldValue>19080</FieldValue>
       <FieldType>Text</FieldType>
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>
@@ -131,14 +132,50 @@
       <FieldMax>0</FieldMax>
       <FieldOptions />
     </FieldInformation>
+    <FieldInformation>
+      <CategoryName>Attraction Doors</CategoryName>
+      <FieldName>Enable</FieldName>
+      <FieldValue>1</FieldValue>
+      <FieldType>Bool</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldOptions />
+      <Hint>Place DoorLeft.png/DoorRight.png/DoorsBezel.png into game folder</Hint>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>Bezel</CategoryName>
+      <FieldName>Enable</FieldName>
+      <FieldValue>1</FieldValue>
+      <FieldType>Bool</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldOptions />
+      <Hint>Place Bezel.png into game folder</Hint>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>Border</CategoryName>
+      <FieldName>Enable</FieldName>
+      <FieldValue>0</FieldValue>
+      <FieldType>Bool</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldOptions />
+      <Hint>Place Border.png into game folder</Hint>
+    </FieldInformation>
   </ConfigValues>
   <JoystickButtons>
     <JoystickButtons>
       <ButtonName>Coin 1</ButtonName>
+      <RawInputButton>
+        <DevicePath>###LIGHTGUN1###</DevicePath>
+        <DeviceType>Mouse</DeviceType>
+        <MouseButton>MiddleButton</MouseButton>
+        <KeyboardKey>None</KeyboardKey>
+      </RawInputButton>
       <InputMapping>Coin1</InputMapping>
       <AnalogType>None</AnalogType>
-      <BindNameRi />
-      <BindName />
+      <BindNameRi>###LIGHTGUN1 MiddleButton###</BindNameRi>
+      <BindName>###LIGHTGUN1 MiddleButton###</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -159,10 +196,16 @@
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Coin 2</ButtonName>
+      <RawInputButton>
+        <DevicePath>###LIGHTGUN2###</DevicePath>
+        <DeviceType>Mouse</DeviceType>
+        <MouseButton>MiddleButton</MouseButton>
+        <KeyboardKey>None</KeyboardKey>
+      </RawInputButton>
       <InputMapping>Coin2</InputMapping>
       <AnalogType>None</AnalogType>
-      <BindNameRi />
-      <BindName />
+      <BindNameRi>###LIGHTGUN2 MiddleButton###</BindNameRi>
+      <BindName>###LIGHTGUN2 MiddleButton###</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -699,7 +742,7 @@
     </JoystickButtons>
   </JoystickButtons>
   <EmulationProfile>WartranTroopers</EmulationProfile>
-  <GameProfileRevision>5</GameProfileRevision>
+  <GameProfileRevision>10</GameProfileRevision>
   <HasSeparateTestMode>false</HasSeparateTestMode>
   <Is64Bit>true</Is64Bit>
   <TestExecIs64Bit>false</TestExecIs64Bit>
@@ -721,4 +764,5 @@
   <GasAxisMin>0</GasAxisMin>
   <GasAxisMax>255</GasAxisMax>
   <OnlineProfileURL />
+  <IsLegacy>false</IsLegacy>
 </GameProfile>

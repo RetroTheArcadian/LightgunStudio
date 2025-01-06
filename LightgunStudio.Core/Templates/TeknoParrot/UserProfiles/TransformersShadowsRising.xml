@@ -3,7 +3,7 @@
   <ProfileName>TransformersShadowsRising</ProfileName>
   <GameNameInternal>Transformers: Shadows Rising</GameNameInternal>
   <GameGenreInternal>Shooter</GameGenreInternal>
-  <GamePath>\Launchbox\Games\Teknoparrot\Transformers Shadows Rising\shell\Shell.exe</GamePath>
+  <GamePath>###TP_GAME_ROOT_DIR###\Transformers Shadows Rising\shell\Shell.exe</GamePath>
   <TestMenuParameter />
   <TestMenuIsExecutable>false</TestMenuIsExecutable>
   <ExtraParameters />

@@ -7,229 +7,180 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Templates\DemulShooter\config.ini" />
-    <None Remove="Templates\FolderStructure.json" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\2Spicy.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\AAA.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\Akuma.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\AliensArmageddon.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\AliensExtermination.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\BBHPro.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\BBHWorld.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\BlockKing.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\BugBusters.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\Castlevania.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\EADP.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\ElevatorActionInvasion.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\FarCryParadiseLost.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\Friction.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\GaiaAttack4.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\GG.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\GhostBusters.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\GSEVO.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\GundamSpiritsOfZeon.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\Gunslinger.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\HOTD4.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\HOTD4ELF2.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\HOTD4SP.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\HOTDEX.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\HOTDSD.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\InfinityBladeFX.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\JurassicPark.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\LethalEnforcers3.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\LGI3D.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\LGJ.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\LGJS.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\LostLand.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\LuigisMansion.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\OG.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\PointBlankX.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\PoliceTrainer2.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\Primevil.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\PullTheTrigger.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\RaccoonRampage.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\Rambo.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\SilentHill.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\StarTrekVoyager.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\TargetTerrorGold.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\TC5.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\TC5_PEDALS.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\Terminator - Copy.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\Terminator.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\TombRaider.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\Transformers.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\TransformersShadowsRising.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\WalkingDead.xml" />
-    <None Remove="Templates\TeknoParrot\UserProfiles\WartranTroopers.xml" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Content Include="Templates\DemulShooter\config.ini">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Templates\FolderStructure.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\2Spicy.xml">
+    <Content Include="Templates\Config.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\AAA.xml">
+    <Content Include="Templates\MAME\ctrlr.cfg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\Akuma.xml">
+    <Content Include="Templates\Reshade\Other\ReShadePreset.ini">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\AliensArmageddon.xml">
+    <Content Include="Templates\Reshade\Sinden\ReShadePreset.ini">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\AliensExtermination.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\2Spicy.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\BBHPro.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\AAA.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\BBHWorld.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\Akuma.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\BlockKing.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\AliensArmageddon.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\BugBusters.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\AliensExtermination.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\Castlevania.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\BBHPro.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\EADP.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\BBHWorld.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\ElevatorActionInvasion.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\BlockKing.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\FarCryParadiseLost.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\BugBusters.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\Friction.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\Castlevania.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\GaiaAttack4.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\EADP.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\GG.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\ElevatorActionInvasion.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\GhostBusters.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\FarCryParadiseLost.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\GSEVO.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\Friction.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\GundamSpiritsOfZeon.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\GaiaAttack4.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\Gunslinger.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\GG.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\HOTD4.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\GhostBusters.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\HOTD4ELF2.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\GSEVO.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\HOTD4SP.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\GSEVOELF2.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\HOTDEX.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\GundamSpiritsOfZeon.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\HOTDSD.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\Gunslinger.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\InfinityBladeFX.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\HOTD4.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\JurassicPark.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\HOTD4ELF2.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\LethalEnforcers3.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\HOTD4SP.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\LGI3D.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\HOTDEX.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\LGJ.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\HOTDSD.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\LGJS.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\InfinityBladeFX.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\LostLand.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\JurassicPark.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\LuigisMansion.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\LethalEnforcers3.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\OG.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\LGI3D.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\PointBlankX.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\LGJ.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\PoliceTrainer2.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\LGJS.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\Primevil.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\LostLand.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\PullTheTrigger.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\LuigisMansion.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\RaccoonRampage.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\OG.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\Rambo.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\PointBlankX.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\SilentHill.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\PoliceTrainer2.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\StarTrekVoyager.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\Primevil.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\TargetTerrorGold.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\PullTheTrigger.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\TC5.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\RaccoonRampage.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\TC5_PEDALS.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\Rambo.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\Terminator - Copy.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\SilentHill.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\Terminator.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\StarTrekVoyager.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\TombRaider.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\TargetTerrorGold.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\Transformers.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\TC5.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\TransformersShadowsRising.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\TC5_PEDALS.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\WalkingDead.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\Terminator.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\TeknoParrot\UserProfiles\WartranTroopers.xml">
+    <Content Include="Templates\Teknoparrot\UserProfiles\TombRaider.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Templates\Lightguns\" />
+    <Content Include="Templates\Teknoparrot\UserProfiles\Transformers.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Teknoparrot\UserProfiles\TransformersShadowsRising.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Teknoparrot\UserProfiles\WalkingDead.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Teknoparrot\UserProfiles\WartranTroopers.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>

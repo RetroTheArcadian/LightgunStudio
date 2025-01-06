@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <ProfileName>Castlevania</ProfileName>
-  <GameNameInternal>Castlevania: The Arcade</GameNameInternal>
-  <GameGenreInternal>Shooter</GameGenreInternal>
-  <GamePath>\Launchbox\Games\Teknoparrot\Castlevania The Arcade\HCV.exe</GamePath>
+  <GameName>Castlevania: The Arcade</GameName>
+  <GameGenre>Shooter</GameGenre>
+  <GamePath>###TP_GAME_ROOT_DIR###\Castlevania The Arcade\HCV\HCV_APP\HCV.exe</GamePath>
   <TestMenuParameter />
   <TestMenuIsExecutable>false</TestMenuIsExecutable>
   <ExtraParameters />
@@ -36,7 +35,7 @@
     <FieldInformation>
       <CategoryName>General</CategoryName>
       <FieldName>DisplayMode</FieldName>
-      <FieldValue>Fullscreen Windowed</FieldValue>
+      <FieldValue>Fullscreen</FieldValue>
       <FieldType>Dropdown</FieldType>
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>
@@ -185,6 +184,8 @@
       <ButtonName>Test</ButtonName>
       <InputMapping>Test</InputMapping>
       <AnalogType>None</AnalogType>
+      <BindNameRi />
+      <BindName />
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -207,6 +208,8 @@
       <ButtonName>Service</ButtonName>
       <InputMapping>Service1</InputMapping>
       <AnalogType>None</AnalogType>
+      <BindNameRi />
+      <BindName />
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -233,7 +236,7 @@
         <MouseButton>LeftButton</MouseButton>
         <KeyboardKey>None</KeyboardKey>
       </RawInputButton>
-      <InputMapping>P1ButtonStart</InputMapping>
+      <InputMapping>P1Button2</InputMapping>
       <AnalogType>None</AnalogType>
       <BindNameRi>###LIGHTGUN1 LeftButton###</BindNameRi>
       <BindName>###LIGHTGUN1 LeftButton###</BindName>
@@ -252,6 +255,8 @@
       <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
       <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
       <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Player 1 Whip X</ButtonName>
@@ -395,8 +400,8 @@
       </RawInputButton>
       <InputMapping>P1LightGun</InputMapping>
       <AnalogType>None</AnalogType>
-      <BindNameRi>###LIGHTGUN1 NAME###</BindNameRi>
-      <BindName>###LIGHTGUN1 NAME###</BindName>
+      <BindNameRi>###LIGHTGUN1 Name###</BindNameRi>
+      <BindName>###LIGHTGUN1 Name###</BindName>
       <HideWithDirectInput>true</HideWithDirectInput>
       <HideWithXInput>true</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -412,44 +417,18 @@
       <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
       <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
       <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Player 1 Whip Red</ButtonName>
       <RawInputButton>
         <DevicePath>###LIGHTGUN1###</DevicePath>
         <DeviceType>Mouse</DeviceType>
-        <MouseButton>LeftButton</MouseButton>
-        <KeyboardKey>None</KeyboardKey>
-      </RawInputButton>
-      <InputMapping>P1Button1</InputMapping>
-      <AnalogType>None</AnalogType>
-      <BindNameRi>###LIGHTGUN1 LeftButton###</BindNameRi>
-      <BindName>###LIGHTGUN1 LeftButton###</BindName>
-      <HideWithDirectInput>false</HideWithDirectInput>
-      <HideWithXInput>false</HideWithXInput>
-      <HideWithRawInput>false</HideWithRawInput>
-      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
-      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
-      <HideWithRelativeAxis>false</HideWithRelativeAxis>
-      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
-      <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
-      <HideWithoutUseDPadForGUN1Stick>false</HideWithoutUseDPadForGUN1Stick>
-      <HideWithUseDPadForGUN2Stick>false</HideWithUseDPadForGUN2Stick>
-      <HideWithoutUseDPadForGUN2Stick>false</HideWithoutUseDPadForGUN2Stick>
-      <HideWithUseAnalogAxisToAimGUN1>false</HideWithUseAnalogAxisToAimGUN1>
-      <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
-      <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
-      <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
-    </JoystickButtons>
-    <JoystickButtons>
-      <ButtonName>Player 1 Whip Yellow</ButtonName>
-      <RawInputButton>
-        <DevicePath>###LIGHTGUN1###</DevicePath>
-        <DeviceType>Mouse</DeviceType>
         <MouseButton>RightButton</MouseButton>
         <KeyboardKey>None</KeyboardKey>
       </RawInputButton>
-      <InputMapping>P1Button2</InputMapping>
+      <InputMapping>P1Button1</InputMapping>
       <AnalogType>None</AnalogType>
       <BindNameRi>###LIGHTGUN1 RightButton###</BindNameRi>
       <BindName>###LIGHTGUN1 RightButton###</BindName>
@@ -468,6 +447,38 @@
       <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
       <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
       <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Player 1 Whip Yellow</ButtonName>
+      <RawInputButton>
+        <DevicePath>###LIGHTGUN1###</DevicePath>
+        <DeviceType>Mouse</DeviceType>
+        <MouseButton>LeftButton</MouseButton>
+        <KeyboardKey>None</KeyboardKey>
+      </RawInputButton>
+      <InputMapping>P1Button3</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameRi>###LIGHTGUN1 LeftButton###</BindNameRi>
+      <BindName>###LIGHTGUN1 LeftButton###</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+      <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
+      <HideWithoutUseDPadForGUN1Stick>false</HideWithoutUseDPadForGUN1Stick>
+      <HideWithUseDPadForGUN2Stick>false</HideWithUseDPadForGUN2Stick>
+      <HideWithoutUseDPadForGUN2Stick>false</HideWithoutUseDPadForGUN2Stick>
+      <HideWithUseAnalogAxisToAimGUN1>false</HideWithUseAnalogAxisToAimGUN1>
+      <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
+      <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
+      <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Player 2 Start</ButtonName>
@@ -477,7 +488,7 @@
         <MouseButton>LeftButton</MouseButton>
         <KeyboardKey>None</KeyboardKey>
       </RawInputButton>
-      <InputMapping>P2ButtonStart</InputMapping>
+      <InputMapping>P2Button2</InputMapping>
       <AnalogType>None</AnalogType>
       <BindNameRi>###LIGHTGUN2 LeftButton###</BindNameRi>
       <BindName>###LIGHTGUN2 LeftButton###</BindName>
@@ -496,6 +507,8 @@
       <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
       <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
       <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Player 2 Whip X</ButtonName>
@@ -639,8 +652,8 @@
       </RawInputButton>
       <InputMapping>P2LightGun</InputMapping>
       <AnalogType>None</AnalogType>
-      <BindNameRi>###LIGHTGUN2 NAME###</BindNameRi>
-      <BindName>###LIGHTGUN2 NAME###</BindName>
+      <BindNameRi>###LIGHTGUN2 Name###</BindNameRi>
+      <BindName>###LIGHTGUN2 Name###</BindName>
       <HideWithDirectInput>true</HideWithDirectInput>
       <HideWithXInput>true</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -656,44 +669,18 @@
       <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
       <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
       <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Player 2 Whip Red</ButtonName>
       <RawInputButton>
         <DevicePath>###LIGHTGUN2###</DevicePath>
         <DeviceType>Mouse</DeviceType>
-        <MouseButton>LeftButton</MouseButton>
-        <KeyboardKey>None</KeyboardKey>
-      </RawInputButton>
-      <InputMapping>P2Button1</InputMapping>
-      <AnalogType>None</AnalogType>
-      <BindNameRi>###LIGHTGUN2 LeftButton###</BindNameRi>
-      <BindName>###LIGHTGUN2 LeftButton###</BindName>
-      <HideWithDirectInput>false</HideWithDirectInput>
-      <HideWithXInput>false</HideWithXInput>
-      <HideWithRawInput>false</HideWithRawInput>
-      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
-      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
-      <HideWithRelativeAxis>false</HideWithRelativeAxis>
-      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
-      <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
-      <HideWithoutUseDPadForGUN1Stick>false</HideWithoutUseDPadForGUN1Stick>
-      <HideWithUseDPadForGUN2Stick>false</HideWithUseDPadForGUN2Stick>
-      <HideWithoutUseDPadForGUN2Stick>false</HideWithoutUseDPadForGUN2Stick>
-      <HideWithUseAnalogAxisToAimGUN1>false</HideWithUseAnalogAxisToAimGUN1>
-      <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
-      <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
-      <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
-    </JoystickButtons>
-    <JoystickButtons>
-      <ButtonName>Player 2 Whip Yellow</ButtonName>
-      <RawInputButton>
-        <DevicePath>###LIGHTGUN2###</DevicePath>
-        <DeviceType>Mouse</DeviceType>
         <MouseButton>RightButton</MouseButton>
         <KeyboardKey>None</KeyboardKey>
       </RawInputButton>
-      <InputMapping>P2Button2</InputMapping>
+      <InputMapping>P2Button1</InputMapping>
       <AnalogType>None</AnalogType>
       <BindNameRi>###LIGHTGUN2 RightButton###</BindNameRi>
       <BindName>###LIGHTGUN2 RightButton###</BindName>
@@ -712,15 +699,47 @@
       <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
       <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
       <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Player 2 Whip Yellow</ButtonName>
+      <RawInputButton>
+        <DevicePath>###LIGHTGUN2###</DevicePath>
+        <DeviceType>Mouse</DeviceType>
+        <MouseButton>LeftButton</MouseButton>
+        <KeyboardKey>None</KeyboardKey>
+      </RawInputButton>
+      <InputMapping>P2Button3</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameRi>###LIGHTGUN2 LeftButton###</BindNameRi>
+      <BindName>###LIGHTGUN2 LeftButton###</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+      <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
+      <HideWithoutUseDPadForGUN1Stick>false</HideWithoutUseDPadForGUN1Stick>
+      <HideWithUseDPadForGUN2Stick>false</HideWithUseDPadForGUN2Stick>
+      <HideWithoutUseDPadForGUN2Stick>false</HideWithoutUseDPadForGUN2Stick>
+      <HideWithUseAnalogAxisToAimGUN1>false</HideWithUseAnalogAxisToAimGUN1>
+      <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
+      <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
+      <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
     </JoystickButtons>
   </JoystickButtons>
   <EmulationProfile>Castlevania</EmulationProfile>
-  <GameProfileRevision>7</GameProfileRevision>
+  <GameProfileRevision>5</GameProfileRevision>
   <HasSeparateTestMode>false</HasSeparateTestMode>
   <Is64Bit>false</Is64Bit>
   <TestExecIs64Bit>false</TestExecIs64Bit>
   <EmulatorType>TeknoParrot</EmulatorType>
-  <Patreon>false</Patreon>
+  <Patreon>true</Patreon>
   <RequiresAdmin>false</RequiresAdmin>
   <msysType>0</msysType>
   <InvertedMouseAxis>true</InvertedMouseAxis>
@@ -737,6 +756,4 @@
   <GasAxisMin>0</GasAxisMin>
   <GasAxisMax>255</GasAxisMax>
   <OnlineProfileURL />
-  <IsLegacy>false</IsLegacy>
-  <HasTpoSupport>false</HasTpoSupport>
 </GameProfile>

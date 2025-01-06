@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-	<GamePath>D:\Launchbox\Games\Teknoparrot\LGJS.teknoparrot\lgjsp_app</GamePath>
+	<GamePath>D:###TP_GAME_ROOT_DIR###\LGJS.teknoparrot\lgjsp_app</GamePath>
 	<TestMenuParameter>-t</TestMenuParameter>
 	<TestMenuIsExecutable>false</TestMenuIsExecutable>
 	<ExtraParameters></ExtraParameters>

@@ -3,7 +3,7 @@
   <ProfileName>JurassicPark</ProfileName>
   <GameNameInternal>Jurassic Park</GameNameInternal>
   <GameGenreInternal>Shooter</GameGenreInternal>
-  <GamePath>\Launchbox\Games\Teknoparrot\Jurasic Park_1.08\game</GamePath>
+  <GamePath>###TP_GAME_ROOT_DIR###\Jurassic Park\game</GamePath>
   <TestMenuParameter />
   <TestMenuIsExecutable>false</TestMenuIsExecutable>
   <ExtraParameters />
@@ -160,8 +160,6 @@
       <ButtonName>Coin</ButtonName>
       <InputMapping>Coin1</InputMapping>
       <AnalogType>None</AnalogType>
-      <BindNameRi />
-      <BindName />
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -272,6 +270,8 @@
       <ButtonName>TestMenu OK</ButtonName>
       <InputMapping>P1ButtonRight</InputMapping>
       <AnalogType>None</AnalogType>
+      <BindNameRi />
+      <BindName />
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -317,13 +317,13 @@
       <RawInputButton>
         <DevicePath>###LIGHTGUN1###</DevicePath>
         <DeviceType>Mouse</DeviceType>
-        <MouseButton>LeftButton</MouseButton>
+        <MouseButton>MiddleButton</MouseButton>
         <KeyboardKey>None</KeyboardKey>
       </RawInputButton>
       <InputMapping>P1ButtonStart</InputMapping>
       <AnalogType>None</AnalogType>
-      <BindNameRi>###LIGHTGUN1 LeftButton###</BindNameRi>
-      <BindName>###LIGHTGUN1 LeftButton###</BindName>
+      <BindNameRi>###LIGHTGUN1 MiddleButton###</BindNameRi>
+      <BindName>###LIGHTGUN1 MiddleButton###</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -339,6 +339,8 @@
       <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
       <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
       <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Trigger P1</ButtonName>
@@ -367,19 +369,21 @@
       <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
       <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
       <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Grenades P1</ButtonName>
       <RawInputButton>
-        <DevicePath>###LIGHTGUN2###</DevicePath>
+        <DevicePath>###LIGHTGUN1###</DevicePath>
         <DeviceType>Mouse</DeviceType>
-        <MouseButton>MiddleButton</MouseButton>
+        <MouseButton>RightButton</MouseButton>
         <KeyboardKey>None</KeyboardKey>
       </RawInputButton>
-      <InputMapping>P2Button4</InputMapping>
+      <InputMapping>P1Button2</InputMapping>
       <AnalogType>None</AnalogType>
-      <BindNameRi>###LIGHTGUN2 MiddleButton###</BindNameRi>
-      <BindName>###LIGHTGUN2 MiddleButton###</BindName>
+      <BindNameRi>###LIGHTGUN1 RightButton###</BindNameRi>
+      <BindName>###LIGHTGUN1 RightButton###</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -395,6 +399,8 @@
       <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
       <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
       <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>P1 Gun X</ButtonName>
@@ -530,7 +536,7 @@
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>P1 Light Gun</ButtonName>
-       <RawInputButton>
+      <RawInputButton>
         <DevicePath>###LIGHTGUN1###</DevicePath>
         <DeviceType>Mouse</DeviceType>
         <MouseButton>None</MouseButton>
@@ -538,8 +544,8 @@
       </RawInputButton>
       <InputMapping>P1LightGun</InputMapping>
       <AnalogType>None</AnalogType>
-      <BindNameRi>###LIGHTGUN1 NAME###</BindNameRi>
-      <BindName>###LIGHTGUN1 NAME###</BindName>
+      <BindNameRi>###LIGHTGUN1 Name###</BindNameRi>
+      <BindName>###LIGHTGUN1 Name###</BindName>
       <HideWithDirectInput>true</HideWithDirectInput>
       <HideWithXInput>true</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -555,19 +561,21 @@
       <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
       <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
       <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Start Button P2</ButtonName>
       <RawInputButton>
         <DevicePath>###LIGHTGUN2###</DevicePath>
         <DeviceType>Mouse</DeviceType>
-        <MouseButton>LeftButton</MouseButton>
+        <MouseButton>MiddleButton</MouseButton>
         <KeyboardKey>None</KeyboardKey>
       </RawInputButton>
       <InputMapping>P2ButtonStart</InputMapping>
       <AnalogType>None</AnalogType>
-      <BindNameRi>###LIGHTGUN2 LeftButton###</BindNameRi>
-      <BindName>###LIGHTGUN2 LeftButton###</BindName>
+      <BindNameRi>###LIGHTGUN2 MiddleButton###</BindNameRi>
+      <BindName>###LIGHTGUN2 MiddleButton###</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -583,6 +591,8 @@
       <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
       <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
       <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Trigger P2</ButtonName>
@@ -611,18 +621,21 @@
       <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
       <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
       <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
     </JoystickButtons>
     <JoystickButtons>
+      <ButtonName>Grenades P2</ButtonName>
       <RawInputButton>
         <DevicePath>###LIGHTGUN2###</DevicePath>
         <DeviceType>Mouse</DeviceType>
-        <MouseButton>MiddleButton</MouseButton>
+        <MouseButton>RightButton</MouseButton>
         <KeyboardKey>None</KeyboardKey>
       </RawInputButton>
-      <InputMapping>P2Button4</InputMapping>
+      <InputMapping>P2Button2</InputMapping>
       <AnalogType>None</AnalogType>
-      <BindNameRi>###LIGHTGUN2 MiddleButton###</BindNameRi>
-      <BindName>###LIGHTGUN2 MiddleButton###</BindName>
+      <BindNameRi>###LIGHTGUN2 RightButton###</BindNameRi>
+      <BindName>###LIGHTGUN2 RightButton###</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -638,6 +651,8 @@
       <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
       <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
       <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>P2 Gun X</ButtonName>
@@ -773,8 +788,16 @@
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>P2 Light Gun</ButtonName>
+      <RawInputButton>
+        <DevicePath>###LIGHTGUN2###</DevicePath>
+        <DeviceType>Mouse</DeviceType>
+        <MouseButton>None</MouseButton>
+        <KeyboardKey>None</KeyboardKey>
+      </RawInputButton>
       <InputMapping>P2LightGun</InputMapping>
       <AnalogType>None</AnalogType>
+      <BindNameRi>###LIGHTGUN2 Name###</BindNameRi>
+      <BindName>###LIGHTGUN2 Name###</BindName>
       <HideWithDirectInput>true</HideWithDirectInput>
       <HideWithXInput>true</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>

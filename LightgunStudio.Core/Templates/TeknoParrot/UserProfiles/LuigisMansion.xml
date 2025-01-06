@@ -2,7 +2,7 @@
 <GameProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <GameName>Luigi's Mansion Arcade</GameName>
   <GameGenre>Shooter</GameGenre>
-  <GamePath>\Launchbox\Games\Teknoparrot\Luigi's Mansion Arcade\exe\x64\VACUUM.exe</GamePath>
+  <GamePath>###TP_GAME_ROOT_DIR###\Luigi's Mansion Arcade\exe\x64\VACUUM.exe</GamePath>
   <TestMenuParameter />
   <TestMenuIsExecutable>false</TestMenuIsExecutable>
   <ExtraParameters />
@@ -176,13 +176,13 @@
       <RawInputButton>
         <DevicePath>###LIGHTGUN1###</DevicePath>
         <DeviceType>Mouse</DeviceType>
-        <MouseButton>LeftButton</MouseButton>
+        <MouseButton>MiddleButton</MouseButton>
         <KeyboardKey>None</KeyboardKey>
       </RawInputButton>
       <InputMapping>P1ButtonStart</InputMapping>
       <AnalogType>None</AnalogType>
-      <BindNameRi>###LIGHTGUN1 LeftButton###</BindNameRi>
-      <BindName>###LIGHTGUN1 LeftButton###</BindName>
+      <BindNameRi>###LIGHTGUN1 MiddleButton###</BindNameRi>
+      <BindName>###LIGHTGUN1 MiddleButton###</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -405,16 +405,10 @@
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Player 1 Vacuum Screen Out</ButtonName>
-      <RawInputButton>
-        <DevicePath>###LIGHTGUN1###</DevicePath>
-        <DeviceType>Mouse</DeviceType>
-        <MouseButton>MiddleButton</MouseButton>
-        <KeyboardKey>None</KeyboardKey>
-      </RawInputButton>
       <InputMapping>P1Button3</InputMapping>
       <AnalogType>None</AnalogType>
-      <BindNameRi>###LIGHTGUN1 MiddleButton###</BindNameRi>
-      <BindName>###LIGHTGUN1 MiddleButton###</BindName>
+      <BindNameRi />
+      <BindName />
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -436,13 +430,13 @@
       <RawInputButton>
         <DevicePath>###LIGHTGUN2###</DevicePath>
         <DeviceType>Mouse</DeviceType>
-        <MouseButton>LeftButton</MouseButton>
+        <MouseButton>MiddleButton</MouseButton>
         <KeyboardKey>None</KeyboardKey>
       </RawInputButton>
       <InputMapping>P2ButtonStart</InputMapping>
       <AnalogType>None</AnalogType>
-      <BindNameRi>###LIGHTGUN2 LeftButton###</BindNameRi>
-      <BindName>###LIGHTGUN2 LeftButton###</BindName>
+      <BindNameRi>###LIGHTGUN2 MiddleButton###</BindNameRi>
+      <BindName>###LIGHTGUN2 MiddleButton###</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -665,16 +659,10 @@
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Player 2 Vacuum Screen Out</ButtonName>
-      <RawInputButton>
-        <DevicePath>###LIGHTGUN2###</DevicePath>
-        <DeviceType>Mouse</DeviceType>
-        <MouseButton>MiddleButton</MouseButton>
-        <KeyboardKey>None</KeyboardKey>
-      </RawInputButton>
       <InputMapping>P2Button3</InputMapping>
       <AnalogType>None</AnalogType>
-      <BindNameRi>###LIGHTGUN2 MiddleButton###</BindNameRi>
-      <BindName>###LIGHTGUN2 MiddleButton###</BindName>
+      <BindNameRi />
+      <BindName />
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>

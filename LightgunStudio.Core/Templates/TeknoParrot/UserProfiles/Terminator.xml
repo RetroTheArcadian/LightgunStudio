@@ -2,7 +2,7 @@
 <GameProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <GameName>Terminator Salvation</GameName>
   <GameGenre>Shooting</GameGenre>
-  <GamePath>\Launchbox\Games\Teknoparrot\Terminator Salvation\game</GamePath>
+  <GamePath>###TP_GAME_ROOT_DIR###\Terminator Salvation\game</GamePath>
   <TestMenuParameter />
   <TestMenuIsExecutable>false</TestMenuIsExecutable>
   <ExtraParameters />
@@ -32,16 +32,7 @@
       <FieldMax>0</FieldMax>
       <FieldOptions />
     </FieldInformation>
-    <FieldInformation>
-      <CategoryName>General</CategoryName>
-      <FieldName>Windowed</FieldName>
-      <FieldValue>0</FieldValue>
-      <FieldType>Bool</FieldType>
-      <FieldMin>0</FieldMin>
-      <FieldMax>0</FieldMax>
-      <FieldOptions />
-    </FieldInformation>
-    <FieldInformation>
+   <FieldInformation>
       <CategoryName>General</CategoryName>
       <FieldName>Use Custom Resolution</FieldName>
       <FieldValue>1</FieldValue>
@@ -64,6 +55,15 @@
       <FieldName>Custom Resolution Height</FieldName>
       <FieldValue>1080</FieldValue>
       <FieldType>Text</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldOptions />
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
+      <FieldName>Windowed</FieldName>
+      <FieldValue>0</FieldValue>
+      <FieldType>Bool</FieldType>
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>
       <FieldOptions />

@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <GameName>Elevator Action Death Parade</GameName>
-  <GameGenre>Shooter</GameGenre>
-  <GamePath>\Launchbox\Games\Teknoparrot\Elevator Action Death Parade\Game.exe</GamePath>
+  <ProfileName>EADP</ProfileName>
+  <GameNameInternal>Elevator Action Death Parade</GameNameInternal>
+  <GameGenreInternal>Shooter</GameGenreInternal>
+  <GamePath>###TP_GAME_ROOT_DIR###\Elevator Action Death Parade\Game.exe</GamePath>
   <TestMenuParameter />
   <TestMenuIsExecutable>false</TestMenuIsExecutable>
   <ExtraParameters />
@@ -118,7 +119,7 @@
     <FieldInformation>
       <CategoryName>Border</CategoryName>
       <FieldName>Enable</FieldName>
-      <FieldValue>0</FieldValue>
+      <FieldValue>1</FieldValue>
       <FieldType>Bool</FieldType>
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>
@@ -138,7 +139,7 @@
     <FieldInformation>
       <CategoryName>Border</CategoryName>
       <FieldName>Scale</FieldName>
-      <FieldValue>0</FieldValue>
+      <FieldValue>1</FieldValue>
       <FieldType>Bool</FieldType>
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>
@@ -406,13 +407,13 @@
       <RawInputButton>
         <DevicePath>###LIGHTGUN1###</DevicePath>
         <DeviceType>Mouse</DeviceType>
-        <MouseButton>RightButton</MouseButton>
+        <MouseButton>MiddleButton</MouseButton>
         <KeyboardKey>None</KeyboardKey>
       </RawInputButton>
       <InputMapping>P1ButtonLeft</InputMapping>
       <AnalogType>None</AnalogType>
-      <BindNameRi>###LIGHTGUN1 RightButton###</BindNameRi>
-      <BindName>###LIGHTGUN1 RightButton###</BindName>
+      <BindNameRi>###LIGHTGUN1 MiddleButton###</BindNameRi>
+      <BindName>###LIGHTGUN1 MiddleButton###</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -436,13 +437,13 @@
       <RawInputButton>
         <DevicePath>###LIGHTGUN2###</DevicePath>
         <DeviceType>Mouse</DeviceType>
-        <MouseButton>RightButton</MouseButton>
+        <MouseButton>MiddleButton</MouseButton>
         <KeyboardKey>None</KeyboardKey>
       </RawInputButton>
-      <InputMapping>P2ButtonLeft</InputMapping>
+      <InputMapping>P1ButtonLeft</InputMapping>
       <AnalogType>None</AnalogType>
-      <BindNameRi>###LIGHTGUN2 RightButton###</BindNameRi>
-      <BindName>###LIGHTGUN2 RightButton###</BindName>
+      <BindNameRi>###LIGHTGUN2 MiddleButton###</BindNameRi>
+      <BindName>###LIGHTGUN2 MiddleButton###</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -603,8 +604,8 @@
       </RawInputButton>
       <InputMapping>P1LightGun</InputMapping>
       <AnalogType>None</AnalogType>
-      <BindNameRi>###LIGHTGUN1 NAME###</BindNameRi>
-      <BindName>###LIGHTGUN1 NAME###</BindName>
+      <BindNameRi>###LIGHTGUN1 Name###</BindNameRi>
+      <BindName>###LIGHTGUN1 Name###</BindName>
       <HideWithDirectInput>true</HideWithDirectInput>
       <HideWithXInput>true</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -658,13 +659,13 @@
       <RawInputButton>
         <DevicePath>###LIGHTGUN1###</DevicePath>
         <DeviceType>Mouse</DeviceType>
-        <MouseButton>MiddleButton</MouseButton>
+        <MouseButton>RightButton</MouseButton>
         <KeyboardKey>None</KeyboardKey>
       </RawInputButton>
       <InputMapping>P1Button1</InputMapping>
       <AnalogType>None</AnalogType>
-      <BindNameRi>###LIGHTGUN1 MiddleButton###</BindNameRi>
-      <BindName>###LIGHTGUN1 MiddleButton###</BindName>
+      <BindNameRi>###LIGHTGUN1 RightButton###</BindNameRi>
+      <BindName>###LIGHTGUN1 RightButton###</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -825,8 +826,8 @@
       </RawInputButton>
       <InputMapping>P2LightGun</InputMapping>
       <AnalogType>None</AnalogType>
-      <BindNameRi>###LIGHTGUN2 NAME###</BindNameRi>
-      <BindName>###LIGHTGUN2 NAME###</BindName>
+      <BindNameRi>###LIGHTGUN2 Name###</BindNameRi>
+      <BindName>###LIGHTGUN2 Name###</BindName>
       <HideWithDirectInput>true</HideWithDirectInput>
       <HideWithXInput>true</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -880,13 +881,13 @@
       <RawInputButton>
         <DevicePath>###LIGHTGUN2###</DevicePath>
         <DeviceType>Mouse</DeviceType>
-        <MouseButton>MiddleButton</MouseButton>
+        <MouseButton>RightButton</MouseButton>
         <KeyboardKey>None</KeyboardKey>
       </RawInputButton>
       <InputMapping>P1Button2</InputMapping>
       <AnalogType>None</AnalogType>
-      <BindNameRi>###LIGHTGUN2 MiddleButton###</BindNameRi>
-      <BindName>###LIGHTGUN2 MiddleButton###</BindName>
+      <BindNameRi>###LIGHTGUN2 RightButton###</BindNameRi>
+      <BindName>###LIGHTGUN2 RightButton###</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -907,7 +908,7 @@
     </JoystickButtons>
   </JoystickButtons>
   <EmulationProfile>EADP</EmulationProfile>
-  <GameProfileRevision>9</GameProfileRevision>
+  <GameProfileRevision>11</GameProfileRevision>
   <HasSeparateTestMode>false</HasSeparateTestMode>
   <Is64Bit>false</Is64Bit>
   <TestExecIs64Bit>false</TestExecIs64Bit>
@@ -928,4 +929,6 @@
   <yAxisMax>255</yAxisMax>
   <GasAxisMin>0</GasAxisMin>
   <GasAxisMax>255</GasAxisMax>
+  <OnlineProfileURL />
+  <IsLegacy>false</IsLegacy>
 </GameProfile>

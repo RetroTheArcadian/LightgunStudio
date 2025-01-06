@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <GameName>Tomb Raider</GameName>
-  <GameGenre>Shooter</GameGenre>
-  <GamePath>\Launchbox\Games\Teknoparrot\Tomb Raider\Game\Game.exe</GamePath>
+  <ProfileName>TombRaider</ProfileName>
+  <GameNameInternal>Tomb Raider</GameNameInternal>
+  <GameGenreInternal>Shooter</GameGenreInternal>
+  <GamePath>###TP_GAME_ROOT_DIR###\Tomb Raider\Game\Game.exe</GamePath>
   <TestMenuParameter />
   <TestMenuIsExecutable>false</TestMenuIsExecutable>
   <ExtraParameters />
@@ -150,8 +151,16 @@
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Coin 3</ButtonName>
+      <RawInputButton>
+        <DevicePath>###LIGHTGUN3###</DevicePath>
+        <DeviceType>Mouse</DeviceType>
+        <MouseButton>MiddleButton</MouseButton>
+        <KeyboardKey>None</KeyboardKey>
+      </RawInputButton>
       <InputMapping>JvsTwoP1Button3</InputMapping>
       <AnalogType>None</AnalogType>
+      <BindNameRi>###LIGHTGUN3 MiddleButton###</BindNameRi>
+      <BindName>###LIGHTGUN3 MiddleButton###</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -172,8 +181,16 @@
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Coin 4</ButtonName>
+      <RawInputButton>
+        <DevicePath>###LIGHTGUN4###</DevicePath>
+        <DeviceType>Mouse</DeviceType>
+        <MouseButton>MiddleButton</MouseButton>
+        <KeyboardKey>None</KeyboardKey>
+      </RawInputButton>
       <InputMapping>JvsTwoP2Button3</InputMapping>
       <AnalogType>None</AnalogType>
+      <BindNameRi>###LIGHTGUN4 MiddleButton###</BindNameRi>
+      <BindName>###LIGHTGUN4 MiddleButton###</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -221,13 +238,13 @@
       <RawInputButton>
         <DevicePath>###LIGHTGUN1###</DevicePath>
         <DeviceType>Mouse</DeviceType>
-        <MouseButton>LeftButton</MouseButton>
+        <MouseButton>MiddleButton</MouseButton>
         <KeyboardKey>None</KeyboardKey>
       </RawInputButton>
-      <InputMapping>P1Button1</InputMapping>
+      <InputMapping>P1Button3</InputMapping>
       <AnalogType>None</AnalogType>
-      <BindNameRi>###LIGHTGUN1 LeftButton###</BindNameRi>
-      <BindName>###LIGHTGUN1 LeftButton###</BindName>
+      <BindNameRi>###LIGHTGUN1 MiddleButton###</BindNameRi>
+      <BindName>###LIGHTGUN MiddleButton###</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -388,8 +405,8 @@
       </RawInputButton>
       <InputMapping>P1LightGun</InputMapping>
       <AnalogType>None</AnalogType>
-      <BindNameRi>###LIGHTGUN1 NAME###</BindNameRi>
-      <BindName>###LIGHTGUN1 NAME###</BindName>
+      <BindNameRi>###LIGHTGUN1 Name###</BindNameRi>
+      <BindName>###LIGHTGUN1 Name###</BindName>
       <HideWithDirectInput>true</HideWithDirectInput>
       <HideWithXInput>true</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -640,8 +657,8 @@
       </RawInputButton>
       <InputMapping>P2LightGun</InputMapping>
       <AnalogType>None</AnalogType>
-      <BindNameRi>###LIGHTGUN2 NAME###</BindNameRi>
-      <BindName>###LIGHTGUN2 NAME###</BindName>
+      <BindNameRi>###LIGHTGUN2 Name###</BindNameRi>
+      <BindName>###LIGHTGUN2 Name###</BindName>
       <HideWithDirectInput>true</HideWithDirectInput>
       <HideWithXInput>true</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -670,8 +687,8 @@
       </RawInputButton>
       <InputMapping>P2ButtonStart</InputMapping>
       <AnalogType>None</AnalogType>
-      <BindNameRi>###LIGHTGUN2 NAME###</BindNameRi>
-      <BindName>###LIGHTGUN2 NAME###</BindName>
+      <BindNameRi>###LIGHTGUN2 LeftButton###</BindNameRi>
+      <BindName>###LIGHTGUN2 LeftButton###</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -730,7 +747,7 @@
       </RawInputButton>
       <InputMapping>P2Button2</InputMapping>
       <AnalogType>None</AnalogType>
-      <BindNameRi>###LIGHTGUN2 RightButton###</BindNameRi>
+      <BindNameRi>###LIGHTGUN1 RightButton###</BindNameRi>
       <BindName>###LIGHTGUN2 RightButton###</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
@@ -884,8 +901,16 @@
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Player 3 Light Gun</ButtonName>
+      <RawInputButton>
+        <DevicePath>###LIGHTGUN3###</DevicePath>
+        <DeviceType>Mouse</DeviceType>
+        <MouseButton>None</MouseButton>
+        <KeyboardKey>None</KeyboardKey>
+      </RawInputButton>
       <InputMapping>P3LightGun</InputMapping>
       <AnalogType>None</AnalogType>
+      <BindNameRi>###LIGHTGUN3 Name###</BindNameRi>
+      <BindName>###LIGHTGUN3 Name###</BindName>
       <HideWithDirectInput>true</HideWithDirectInput>
       <HideWithXInput>true</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -906,8 +931,16 @@
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Player 3 Start</ButtonName>
+      <RawInputButton>
+        <DevicePath>###LIGHTGUN3###</DevicePath>
+        <DeviceType>Mouse</DeviceType>
+        <MouseButton>LeftButton</MouseButton>
+        <KeyboardKey>None</KeyboardKey>
+      </RawInputButton>
       <InputMapping>JvsTwoP1ButtonStart</InputMapping>
       <AnalogType>None</AnalogType>
+      <BindNameRi>###LIGHTGUN3 LeftButton###</BindNameRi>
+      <BindName>###LIGHTGUN3 LeftButton###</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -928,8 +961,16 @@
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Player 3 Trigger</ButtonName>
+      <RawInputButton>
+        <DevicePath>###LIGHTGUN3###</DevicePath>
+        <DeviceType>Mouse</DeviceType>
+        <MouseButton>LeftButton</MouseButton>
+        <KeyboardKey>None</KeyboardKey>
+      </RawInputButton>
       <InputMapping>JvsTwoP1Button1</InputMapping>
       <AnalogType>None</AnalogType>
+      <BindNameRi>###LIGHTGUN3 LeftButton###</BindNameRi>
+      <BindName>###LIGHTGUN3 LeftButton###</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -950,8 +991,16 @@
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Player 3 Reload</ButtonName>
+      <RawInputButton>
+        <DevicePath>###LIGHTGUN3###</DevicePath>
+        <DeviceType>Mouse</DeviceType>
+        <MouseButton>RightButton</MouseButton>
+        <KeyboardKey>None</KeyboardKey>
+      </RawInputButton>
       <InputMapping>JvsTwoP1Button2</InputMapping>
       <AnalogType>None</AnalogType>
+      <BindNameRi>###LIGHTGUN3 RightButton###</BindNameRi>
+      <BindName>###LIGHTGUN3 RightButton###</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -1104,8 +1153,16 @@
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Player 4 Light Gun</ButtonName>
+      <RawInputButton>
+        <DevicePath>###LIGHTGUN4###</DevicePath>
+        <DeviceType>Mouse</DeviceType>
+        <MouseButton>None</MouseButton>
+        <KeyboardKey>None</KeyboardKey>
+      </RawInputButton>
       <InputMapping>P4LightGun</InputMapping>
       <AnalogType>None</AnalogType>
+      <BindNameRi>###LIGHTGUN4 Name###</BindNameRi>
+      <BindName>###LIGHTGUN4 Name###</BindName>
       <HideWithDirectInput>true</HideWithDirectInput>
       <HideWithXInput>true</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -1126,8 +1183,16 @@
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Player 4 Start</ButtonName>
+      <RawInputButton>
+        <DevicePath>###LIGHTGUN4###</DevicePath>
+        <DeviceType>Mouse</DeviceType>
+        <MouseButton>LeftButton</MouseButton>
+        <KeyboardKey>None</KeyboardKey>
+      </RawInputButton>
       <InputMapping>JvsTwoP2ButtonStart</InputMapping>
       <AnalogType>None</AnalogType>
+      <BindNameRi>###LIGHTGUN4 LeftButton###</BindNameRi>
+      <BindName>###LIGHTGUN4 LeftButton###</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -1148,8 +1213,16 @@
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Player 4 Trigger</ButtonName>
+      <RawInputButton>
+        <DevicePath>###LIGHTGUN4###</DevicePath>
+        <DeviceType>Mouse</DeviceType>
+        <MouseButton>LeftButton</MouseButton>
+        <KeyboardKey>None</KeyboardKey>
+      </RawInputButton>
       <InputMapping>JvsTwoP2Button1</InputMapping>
       <AnalogType>None</AnalogType>
+      <BindNameRi>###LIGHTGUN4 LeftButton###</BindNameRi>
+      <BindName>###LIGHTGUN4 LeftButton###</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -1170,8 +1243,16 @@
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Player 4 Reload</ButtonName>
+      <RawInputButton>
+        <DevicePath>###LIGHTGUN4###</DevicePath>
+        <DeviceType>Mouse</DeviceType>
+        <MouseButton>RightButton</MouseButton>
+        <KeyboardKey>None</KeyboardKey>
+      </RawInputButton>
       <InputMapping>JvsTwoP2Button2</InputMapping>
       <AnalogType>None</AnalogType>
+      <BindNameRi>###LIGHTGUN4 RightButton###</BindNameRi>
+      <BindName>###LIGHTGUN4 RightButton###</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -1192,7 +1273,7 @@
     </JoystickButtons>
   </JoystickButtons>
   <EmulationProfile>WartranTroopers</EmulationProfile>
-  <GameProfileRevision>5</GameProfileRevision>
+  <GameProfileRevision>6</GameProfileRevision>
   <HasSeparateTestMode>false</HasSeparateTestMode>
   <Is64Bit>true</Is64Bit>
   <TestExecIs64Bit>false</TestExecIs64Bit>
@@ -1213,4 +1294,6 @@
   <yAxisMax>255</yAxisMax>
   <GasAxisMin>0</GasAxisMin>
   <GasAxisMax>255</GasAxisMax>
+  <OnlineProfileURL />
+  <IsLegacy>false</IsLegacy>
 </GameProfile>

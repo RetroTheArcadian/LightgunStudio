@@ -1,0 +1,104 @@
+  {
+    "Lightguns": [
+      {
+        "HID": "VID_2341&PID_8042",
+        "Name": "Arduino LLC GUN4IR Pro Micro P1"
+      },
+      {
+        "HID": "VID_2341&PID_8043",
+        "Name": "Arduino LLC GUN4IR Pro Micro P2"
+      },
+      {
+        "HID": "VID_2341&PID_8046",
+        "Name": "Arduino LLC GUN4IR Pro Micro P1"
+      },
+      {
+        "HID": "VID_2341&PID_8047",
+        "Name": "Arduino LLC GUN4IR Pro Micro P2"
+      },
+      {
+        "HID": "VID_D209&PID_1601",
+        "Name": "Aimtrak P1"
+      },
+      {
+        "HID": "VID_D209&PID_1602",
+        "Name": "Aimtrak P2"
+      },
+      {
+        "HID": "VID_D209&PID_1603",
+        "Name": "Aimtrak P3"
+      },
+      {
+        "HID": "VID_3673&PID_0100",
+        "Name": "BLAMCON P1"
+      },
+      {
+        "HID": "VID_3673&PID_0101",
+        "Name": "BLAMCON P2"
+      },
+      {
+        "HID": "VID_3673&PID_0102",
+        "Name": "BLAMCON P3"
+      },
+      {
+        "HID": "VID_3673&PID_0103",
+        "Name": "BLAMCON P4"
+      },
+      {
+        "HID": "VID_2341&PID_8037",
+        "Name": "AE Lightgun P1 (Alternate)"
+      },
+      {
+        "HID": "VID_2341&PID_8038",
+        "Name": "AE Lightgun P2 (Alternate)"
+      },
+      {
+        "HID": "VID_0483&PID_5750",
+        "Name": "Retroshooter P1"
+      },
+      {
+        "HID": "VID_0483&PID_5751",
+        "Name": "Retroshooter P2"
+      },
+      {
+        "HID": "VID_0483&PID_5752",
+        "Name": "Retroshooter P3"
+      },
+      {
+        "HID": "VID_0483&PID_5753",
+        "Name": "Retroshooter P4"
+      },
+      {
+        "HID": "VID_16C0&PID_0F01",
+        "Name": "Sinden Lightgun Blue"
+      },
+      {
+        "HID": "VID_16C0&PID_0F38",
+        "Name": "Sinden Lightgun Black"
+      },
+      {
+        "HID": "VID_16C0&PID_0F39",
+        "Name": "Sinden Lightgun Player2"
+      },
+      {
+        "HID": "VID_16C0&PID_0F02",
+        "Name": "Sinden Lightgun Red"
+      },
+      {
+        "HID": "VID_023f30_PID&71ff",
+        "Name": "Xenas Lightgun P1"
+      },
+      {
+        "HID": "VID_023f30_PID&72ff",
+        "Name": "Xenas Lightgun P2"
+      },
+      {
+        "HID": "VID_023f30_PID&73ff",
+        "Name": "Xenas Lightgun P3"
+      },
+      {
+        "HID": "VID_023f30_PID&73ff",
+        "Name": "Xenas Lightgun P4"
+      }
+    ]
+  }
