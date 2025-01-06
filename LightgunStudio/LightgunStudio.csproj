@@ -19,6 +19,7 @@
 		<Version Condition=" '$(VersionSuffix)' != '' ">$(VersionSuffix)</Version>
 		<SatelliteResourceLanguages>en</SatelliteResourceLanguages>
 		<ApplicationIcon>Images\System\LightgunStudio.ico</ApplicationIcon>
+		<PackageIcon>LightgunStudio.ico</PackageIcon>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -105,6 +106,15 @@
 		<Content Include="Images\System\shutdown_mo.png">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</Content>
+		<Content Include="Images\Frontends\batocera.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Images\Frontends\es-de.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Images\Frontends\launchbox.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
 		<Content Include="..\README.md">
 			<Pack>True</Pack>
 			<PackagePath>\</PackagePath>
@@ -143,6 +153,13 @@
 
 	<ItemGroup>
 		<Folder Include="Installers\Emulators\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="Images\System\LightgunStudio.ico">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
 	</ItemGroup>
 
 </Project>
