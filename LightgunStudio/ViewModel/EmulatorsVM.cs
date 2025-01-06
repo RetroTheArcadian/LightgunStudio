@@ -1,7 +1,6 @@
 ﻿using LightgunStudio.Core.Dtos;
 using LightgunStudio.Models;
 using LightgunStudio.Utilities;
-using System.Windows;
 
 namespace LightgunStudio.ViewModel
 {

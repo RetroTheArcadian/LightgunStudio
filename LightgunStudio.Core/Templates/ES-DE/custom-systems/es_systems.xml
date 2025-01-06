@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!-- This is the ES-DE custom game systems configuration file for Windows portable LightgunStudio installations -->
+<systemList>
+    <system>
+        <name>pclightgun</name>
+        <fullname>PC Lightgun Systems</fullname>
+        <path>%ROMPATH%\pclightgun</path>
+        <extension>.bat .BAT .lnk .LNK .ahk .exe</extension>
+        <command label="Shortcut or script">%HIDEWINDOW% %ESCAPESPECIALS% %EMULATOR_OS-SHELL% /C %ROM%</command>
+        <platform>windows</platform>
+        <theme>pclightgun</theme>
+    </system>
+    <system>
+        <name>teknoparrot</name>
+        <fullname>TeknoParrot</fullname>
+        <path>%ROMPATH%\teknoparrot</path>
+        <extension>.ahk</extension>
+        <command label="Shortcut or script">%HIDEWINDOW% %ESCAPESPECIALS% %EMULATOR_OS-SHELL% /C %ROM%</command>
+        <platform>arcade</platform>
+        <theme>teknoparrot</theme>
+    </system>
+</systemList>

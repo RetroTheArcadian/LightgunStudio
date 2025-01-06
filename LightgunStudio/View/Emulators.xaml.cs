@@ -14,11 +14,28 @@ namespace LightgunStudio.View
             InitializeComponent();
         }
 
-        private void EmulatorsInstall_Click(object sender, RoutedEventArgs e)
+        private async void EmulatorsInstall_Click(object sender, RoutedEventArgs e)
         {
             EmulatorsVM? vm = this.DataContext as EmulatorsVM;
-            var selectedEmulators = vm?.DisplayEmulators.Select(x => x.Selected == true);
+            var selectedEmulators = vm?.DisplayEmulators.Where(x => x.Selected == true);
+            if (selectedEmulators != null && selectedEmulators.Any())
+            {
+                foreach (var emulator in selectedEmulators)
+                {
+                    await InstallEmulator(emulator.Title);
+                }
+            }
+
             //TODO install emulators based on checked
+        }
+
+        private async Task InstallEmulator(string emulatorName)
+        {
+            switch (emulatorName)
+            {
+                case "Dolphin":
+                    break;
+            }
         }
     }
 }

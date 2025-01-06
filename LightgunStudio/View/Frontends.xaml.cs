@@ -3,11 +3,11 @@
 namespace LightgunStudio.View
 {
     /// <summary>
-    /// Interaction logic for Guns.xaml
+    /// Interaction logic for Frontends.xaml
     /// </summary>
-    public partial class Guns : UserControl
+    public partial class Frontends : UserControl
     {
-        public Guns()
+        public Frontends()
         {
             InitializeComponent();
         }

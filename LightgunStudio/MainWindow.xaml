@@ -55,11 +55,11 @@
                         </Grid>
                     </Menu:Btn>
                     <Menu:Btn Style="{StaticResource BtnStyle}"
-                              Command="{Binding GunsCommand}"
+                              Command="{Binding FrontendsCommand}"
                               IsChecked="False">
                         <Grid>
-                            <Image Source="Images/Menu/gun.png" Style="{StaticResource Image_Style}" />
-                            <TextBlock Text="Gun Combinations"
+                            <Image Source="Images/Menu/frontend.png" Style="{StaticResource Image_Style}" />
+                            <TextBlock Text="Frontends"
                                        Style="{StaticResource Text_Style}" />
                         </Grid>
                     </Menu:Btn>
@@ -73,10 +73,38 @@
                         </Grid>
                     </Menu:Btn>
                     <Menu:Btn Style="{StaticResource BtnStyle}"
+                              Command="{Binding SoftwareCommand}"
+                              IsChecked="False">
+                        <Grid>
+                            <Image Source="Images/Menu/software.png" Style="{StaticResource Image_Style}" />
+                            <TextBlock Text="Software/Tools"
+                                       Style="{StaticResource Text_Style}" />
+                        </Grid>
+                    </Menu:Btn>
+                    <Menu:Btn Style="{StaticResource BtnStyle}"
+                              Command="{Binding DependenciesCommand}"
                               IsChecked="False">
                         <Grid>
                             <Image Source="Images/Menu/dependency.png" Style="{StaticResource Image_Style}" />
                             <TextBlock Text="Dependencies"
+                                       Style="{StaticResource Text_Style}" />
+                        </Grid>
+                    </Menu:Btn>
+                    <Menu:Btn Style="{StaticResource BtnStyle}"
+                              Command="{Binding GunsCommand}"
+                              IsChecked="False">
+                        <Grid>
+                            <Image Source="Images/Menu/gun.png" Style="{StaticResource Image_Style}" />
+                            <TextBlock Text="Gun Combinations"
+                                       Style="{StaticResource Text_Style}" />
+                        </Grid>
+                    </Menu:Btn>
+                    <Menu:Btn Style="{StaticResource BtnStyle}"
+                              Command="{Binding SettingsCommand}"
+                              IsChecked="False">
+                        <Grid>
+                            <Image Source="Images/Menu/settings.png" Style="{StaticResource Image_Style}" />
+                            <TextBlock Text="Settings"
                                        Style="{StaticResource Text_Style}" />
                         </Grid>
                     </Menu:Btn>

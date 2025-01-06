@@ -2,7 +2,7 @@
 
 namespace LightgunStudio.ViewModel
 {
-    class GunsVM : ViewModelBase
+    class SoftwareVM : ViewModelBase
     {
     }
 }

@@ -4,16 +4,26 @@
                     xmlns:vm="clr-namespace:LightgunStudio.ViewModel"
                     >
 
-    <DataTemplate DataType="{x:Type vm:HomeVM}">
-        <view:Home />
+    <DataTemplate DataType="{x:Type vm:DependenciesVM}">
+        <view:Dependencies />
     </DataTemplate>
-
+    <DataTemplate DataType="{x:Type vm:EmulatorsVM}">
+        <view:Emulators />
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:FrontendsVM}">
+        <view:Frontends />
+    </DataTemplate>
     <DataTemplate DataType="{x:Type vm:GunsVM}">
         <view:Guns />
     </DataTemplate>
-
-    <DataTemplate DataType="{x:Type vm:EmulatorsVM}">
-        <view:Emulators />
+    <DataTemplate DataType="{x:Type vm:HomeVM}">
+        <view:Home />
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:SettingsVM}">
+        <view:Settings />
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:SoftwareVM}">
+        <view:Software />
     </DataTemplate>
 
 </ResourceDictionary>
