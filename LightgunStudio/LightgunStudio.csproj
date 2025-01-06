@@ -20,6 +20,8 @@
 		<SatelliteResourceLanguages>en</SatelliteResourceLanguages>
 		<ApplicationIcon>Images\System\LightgunStudio.ico</ApplicationIcon>
 		<PackageIcon>LightgunStudio.ico</PackageIcon>
+		<SignAssembly>True</SignAssembly>
+		<AssemblyOriginatorKeyFile>C:\Git\LightgunStudio\keypair.snk</AssemblyOriginatorKeyFile>
 	</PropertyGroup>
 
 	<ItemGroup>
