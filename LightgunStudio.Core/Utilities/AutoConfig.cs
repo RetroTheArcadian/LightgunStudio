@@ -23,10 +23,10 @@ namespace LightgunStudio.Core.Utilities
             var lightguns = new List<Lightgun>();
             var cfg = GetAutoConfig();
             foreach (var hid in hids) { 
-                var lightgun = cfg?.Lightguns.FirstOrDefault(x=> x.Hid.Contains(hid));
+                var lightgun = cfg?.Lightguns.FirstOrDefault(x=> hid.Contains(x.Hid));
                 if(lightgun != null) {  lightguns.Add(lightgun); }
             }
-            return lightguns;
+            return lightguns.Distinct().ToList();
         }
     }
 }

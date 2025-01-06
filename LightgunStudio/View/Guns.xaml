@@ -4,10 +4,26 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:vm="clr-namespace:LightgunStudio.ViewModel"
+        d:DataContext="{d:DesignInstance Type=vm:GunsVM}"
         mc:Ignorable="d" 
         d:DesignHeight="720" d:DesignWidth="960"
         Style="{StaticResource Page_Style}">
     <Grid>
         <TextBlock Text="Gun Combinations" Width="960" Height="30" Style="{StaticResource Text_Style_PageHeader}" Margin="30,30,0,0" VerticalAlignment="Top"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="260"/>
+                <ColumnDefinition Width="700"/>
+            </Grid.ColumnDefinitions>
+            <ListBox Grid.Column="0" ItemsSource="{Binding DisplayLightguns}" Background="Transparent" Margin="5,168,5,94">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Background="Transparent">
+                            <TextBlock Text="{Binding Name}" Foreground="Wheat" />
+                        </Grid>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Grid>
     </Grid>
 </UserControl>
