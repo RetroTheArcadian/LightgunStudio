@@ -24,7 +24,7 @@
                                 </Grid.RowDefinitions>
                                 <Image Grid.Row="0" Source="{Binding ImagePath}" Style="{StaticResource Image_Style_Tile}" />
                                 <TextBlock Grid.Row="1" Text="{Binding DisplayName}" Style="{StaticResource Text_Style_Tile_Header}" />
-                                <TextBlock Grid.Row="2" Text="{Binding Selected}" Style="{StaticResource Text_Style_Tile_Text}" />
+                                <TextBlock Grid.Row="2" Text="{Binding Description}" Style="{StaticResource Text_Style_Tile_Text}" />
                             </Grid>
                         </Menu:CheckBtn>
                     </DataTemplate>
