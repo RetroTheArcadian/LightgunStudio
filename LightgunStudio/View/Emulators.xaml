@@ -10,10 +10,10 @@
     <Grid>
         <TextBlock Text="Emulators" Width="960" Height="30" Style="{StaticResource Text_Style_PageHeader}" Margin="30,30,0,0" VerticalAlignment="Top"/>
         <ScrollViewer Width="900" Height="510" Style="{StaticResource  ScrollViewer_Style}">
-            <ItemsControl ItemsSource="{Binding EmulatorList}">
+            <ItemsControl ItemsSource="{Binding DisplayEmulators}">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <Menu:Btn Style="{StaticResource BtnStyle_Tile}" IsChecked="{Binding Selected}">
+                        <Menu:Btn Style="{StaticResource BtnStyle_Tile}" IsChecked="{Binding Selected}" Checked="Emulator_Click">
                             <Grid>
                                 <Image Source="{Binding ImagePath}" Style="{StaticResource Image_Style_Tile}" />
                             </Grid>

@@ -1,18 +1,6 @@
-﻿using LightgunStudio.Core.Dtos;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using LightgunStudio.ViewModel;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace LightgunStudio.View
 {
@@ -24,6 +12,13 @@ namespace LightgunStudio.View
         public Emulators()
         {
             InitializeComponent();
+        }
+
+        private void EmulatorsInstall_Click(object sender, RoutedEventArgs e)
+        {
+            EmulatorsVM? vm = this.DataContext as EmulatorsVM;
+            var selectedEmulators = vm?.DisplayEmulators.Select(x => x.Selected == true);
+            //TODO install emulators based on checked
         }
     }
 }

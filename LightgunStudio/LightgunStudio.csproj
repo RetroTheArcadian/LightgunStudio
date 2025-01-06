@@ -18,24 +18,8 @@
 	<Version Condition=" '$(VersionSuffix)' == '' ">0.0.1.0</Version>
 	<Version Condition=" '$(VersionSuffix)' != '' ">$(VersionSuffix)</Version>
 	<SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+	<ApplicationIcon>Images\System\LightgunStudio.ico</ApplicationIcon>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Remove="Fonts\Roboto-Black.ttf" />
-    <None Remove="Fonts\Roboto-Light.ttf" />
-    <None Remove="Fonts\Stormlight.ttf" />
-    <None Remove="Images\Emulators\Dolphin.png" />
-    <None Remove="Images\Emulators\Flycast.png" />
-    <None Remove="Images\Emulators\MAME.png" />
-    <None Remove="Images\Emulators\TeknoParrot.png" />
-    <None Remove="Images\Menu\dependency.png" />
-    <None Remove="Images\Menu\emulator.png" />
-    <None Remove="Images\Menu\gun.png" />
-    <None Remove="Images\Menu\home.png" />
-    <None Remove="Images\shutdown_def.png" />
-    <None Remove="Images\shutdown_mo.png" />
-    <None Remove="Images\System\defaultcover.png" />
-  </ItemGroup>
 
   <ItemGroup>
     <Page Remove="Styles\Button.xaml" />
@@ -52,15 +36,39 @@
     <Content Include="Fonts\Stormlight.ttf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Images\Emulators\BizHawk.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Images\Emulators\Dolphin.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Emulators\Flycast.png">
+	  <Content Include="Images\Emulators\Flycast.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Emulators\HypseusSinge.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\Emulators\MAME.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Images\Emulators\PCSX2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+	<Content Include="Images\Emulators\Daphne.png">
+		<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	</Content>
+    <Content Include="Images\Emulators\PPSSPP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Emulators\RPCS3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+	  <Content Update="Images\Emulators\SegaModel2.png">
+		<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	</Content>
+	<Content Include="Images\Emulators\SegaModel2.png">
+		<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	</Content>
     <Content Include="Images\Emulators\TeknoParrot.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -77,6 +85,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\System\defaultcover.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\System\LightgunStudio.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\System\shutdown_def.png">
