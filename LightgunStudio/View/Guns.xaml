@@ -15,7 +15,7 @@
                 <ColumnDefinition Width="260"/>
                 <ColumnDefinition Width="700"/>
             </Grid.ColumnDefinitions>
-            <ListBox Grid.Column="0" ItemsSource="{Binding DisplayLightguns}" Background="Transparent" Margin="5,168,5,94">
+            <ListBox Grid.Column="0" ItemsSource="{Binding DisplayLightguns}" Background="Transparent" Margin="5,168,5,94" BorderBrush="{x:Null}" >
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <Grid Background="Transparent">

@@ -29,6 +29,13 @@
     ]
   },
   {
+    "Name": "Frontends",
+    "Children": [
+      { "Name": "Es-De" },
+      { "Name": "Launchbox" }
+    ]
+  },
+  {
     "Name": "Temp",
     "Children": []
   }

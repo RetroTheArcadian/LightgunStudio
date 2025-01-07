@@ -3,11 +3,48 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:vm="clr-namespace:LightgunStudio.ViewModel"
+        xmlns:vm="clr-namespace:LightgunStudio.ViewModel" 
+        xmlns:Menu="clr-namespace:LightgunStudio.Utilities" 
+        d:DataContext="{d:DesignInstance Type=vm:FrontendsVM}"
         mc:Ignorable="d" 
         d:DesignHeight="720" d:DesignWidth="960"
         Style="{StaticResource Page_Style}">
     <Grid>
-        <TextBlock Text="Frontends" Width="960" Height="30" Style="{StaticResource Text_Style_PageHeader}" Margin="30,30,0,0" VerticalAlignment="Top"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"></RowDefinition>
+            <RowDefinition Height="510"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Text="Frontends" Width="960" Style="{StaticResource Text_Style_PageHeader}" Margin="30,30,0,0" VerticalAlignment="Top"/>
+        <ScrollViewer Grid.Row="1" Width="900" Height="510" Style="{StaticResource  ScrollViewer_Style}">
+            <ItemsControl ItemsSource="{Binding DisplayFrontends}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="220"></RowDefinition>
+                                <RowDefinition Height="30"></RowDefinition>
+                                <RowDefinition Height="200"></RowDefinition>
+                                <RowDefinition Height="70"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Image Grid.Row="0" Source="{Binding ImagePath}" Style="{StaticResource Image_Style_Tile}" />
+                            <TextBlock Grid.Row="1" Text="{Binding DisplayName}" Style="{StaticResource Text_Style_Tile_Header}" />
+                            <TextBlock Grid.Row="2" Text="{Binding Description}" Style="{StaticResource Text_Style_Tile_Text}" />
+                            <Button Grid.Row="3" Click="Button_Click" Content="Install" Width="200" Height="30" Style="{StaticResource btn}" />
+                        </Grid>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <UniformGrid Rows="{Binding GridSize}" Columns="2">
+                        </UniformGrid>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+            </ItemsControl>
+        </ScrollViewer>
+        <Grid x:Name="grStatus" Grid.Row="2" Visibility="Hidden" Margin="10">
+            <ProgressBar Minimum="0" Maximum="100" Value="0" Name="pbStatus" />
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Name="tbStatus" />
+        </Grid>
     </Grid>
 </UserControl>

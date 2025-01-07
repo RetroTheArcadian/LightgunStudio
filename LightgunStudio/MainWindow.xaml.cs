@@ -6,6 +6,7 @@ using System.Windows.Input;
 using System.Net.Http.Headers;
 using AutoUpdaterDotNET;
 using LightgunStudio.Core.Dtos.Github;
+using LightgunStudio.Core.Utilities;
 
 namespace LightgunStudio
 {
@@ -20,6 +21,7 @@ namespace LightgunStudio
         public MainWindow()
         {
             InitializeComponent();
+            FolderStructure.CreateFolderStructure();
         }
         private void CloseApp_Click(object sender, RoutedEventArgs e)
         {

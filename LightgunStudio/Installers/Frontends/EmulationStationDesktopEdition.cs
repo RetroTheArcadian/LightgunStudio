@@ -3,6 +3,8 @@ using Newtonsoft.Json;
 using System.Net.Http.Headers;
 using System.Net.Http;
 using LightgunStudio.Core.Dtos.Gitlab;
+using System.Windows.Controls;
+using System.IO;
 
 namespace LightgunStudio.Installers.Frontends
 {
@@ -11,17 +13,16 @@ namespace LightgunStudio.Installers.Frontends
         readonly string releasesUrl = "https://gitlab.com/api/v4/projects/es-de%2Femulationstation-de/releases";
         string latestReleaseUrl = string.Empty;
 
-        public async Task DownloadAsync()
+        public async Task DownloadAsync(ProgressBar progressBar, TextBlock textBlock, string destinationDirectoryName)
         {
             await GetLatest();
             if (latestReleaseUrl == string.Empty) return;
-            using (var client = new HttpClientDownloadWithProgress(latestReleaseUrl, @"C:\Arcade\LightgunStudio\Temp\es-de.zip"))
+            using (var client = new HttpClientDownloadWithProgress(latestReleaseUrl, $@"{destinationDirectoryName}\Temp\es-de.zip"))
             {
                 client.ProgressChanged += (fileTotalSize, fileBytesDownloaded, fileProgressPercentage) =>
                 {
-                    Console.WriteLine(fileTotalSize.ToString());
-                    Console.WriteLine(fileBytesDownloaded.ToString());
-                    Console.WriteLine(fileProgressPercentage.ToString());
+                    textBlock.Text = $"Downloading {fileBytesDownloaded}/{fileTotalSize}";
+                    progressBar.Value = fileProgressPercentage??0;
                 };
                 await client.StartDownload();
             }

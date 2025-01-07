@@ -11,7 +11,7 @@ namespace LightgunStudio.Core.Utilities
             if (dllDirectory == null) return null;
             var root = Directory.GetParent(dllDirectory);
             if (root == null) return null;
-            using (var r = new StreamReader(dllDirectory + @"\Templates\Config.json"))
+            using (var r = new StreamReader(root + @"\Templates\Config.json"))
             {
                 string json = r.ReadToEnd();
                 if (json == null) return null;

@@ -27,7 +27,7 @@ namespace LightgunStudio.ViewModel
         public void GetAttachedLightGuns()
         {
             _Controllers = RawInputHelper.GetRawInputDevices().ToList();
-            _pageModel.Lightguns = new AutoConfig().GetActiveLightguns(_Controllers.Select(x => x.DeviceName).ToList());
+            _pageModel.Lightguns = new AutoConfig().GetActiveLightguns(_Controllers.Select(x => x.DeviceName).OrderBy(o=>o).ToList());
         }
     }
 }

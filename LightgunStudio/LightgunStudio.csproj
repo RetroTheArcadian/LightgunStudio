@@ -22,6 +22,7 @@
 		<PackageIcon>LightgunStudio.ico</PackageIcon>
 		<SignAssembly>True</SignAssembly>
 		<AssemblyOriginatorKeyFile>C:\Git\LightgunStudio\keypair.snk</AssemblyOriginatorKeyFile>
+		<BaseOutputPath></BaseOutputPath>
 	</PropertyGroup>
 
 	<ItemGroup>
