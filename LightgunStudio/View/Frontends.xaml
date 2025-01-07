@@ -12,7 +12,7 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="80"></RowDefinition>
-            <RowDefinition Height="510"></RowDefinition>
+            <RowDefinition Height="600"></RowDefinition>
             <RowDefinition Height="40"></RowDefinition>
         </Grid.RowDefinitions>
         <TextBlock Grid.Row="0" Text="Frontends" Width="960" Style="{StaticResource Text_Style_PageHeader}" Margin="30,30,0,0" VerticalAlignment="Top"/>
